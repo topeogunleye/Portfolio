@@ -12,7 +12,7 @@ body {
   max-width: 375px;
   height: 100vh;
   margin: auto;
-  background-image: url('images/background/header-shapes\ mobile@2x.svg');
+  background-image: url('../images/background/header-shapes\ mobile@2x.svg');
 }
 
 .header {
