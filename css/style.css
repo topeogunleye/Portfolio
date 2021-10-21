@@ -186,3 +186,25 @@ body {
 .welcome-text h2 {
   margin-top: 80px;
 }
+
+.proficiency {
+  padding: 30px 0px;
+}
+.proficiency ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.proficiency ul li {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background-color: #ffffff;
+  font-weight: 500;
+  color: #000000;
+}
