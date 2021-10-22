@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -43,6 +47,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  margin: 0;
 }
 
 .main_p {
@@ -52,6 +57,9 @@ body {
 
 .social_h2 {
   color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .social_ul {
@@ -64,4 +72,145 @@ body {
 
 .social_li a:hover {
   cursor: pointer;
+}
+
+/* Works Section */
+.works {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 80px;
+  box-sizing: border-box;
+  margin-top: 80px;
+  place-items: center;
+}
+
+.project {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 327px;
+}
+
+.project:nth-of-type(even) {
+  height: 596px;
+}
+
+.project-text {
+  height: 288px;
+}
+
+.skills ul {
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 215px;
+}
+
+.skills ul li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.primary-text {
+  font-size: 13px;
+}
+
+.primary-text .experience h4 {
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 0;
+}
+
+.primary-text ul {
+  display: flex;
+  justify-content: space-between;
+  width: 236px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.ul .first-child {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #344563;
+}
+
+.secondary-text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  width: fit-content;
+}
+
+.btn-skills {
+  width: 120px;
+  letter-spacing: 0.03em;
+  margin: 10px 0;
+}
+
+.btn-resume {
+  text-decoration: none;
+}
+
+.btn:hover {
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  cursor: pointer;
+}
+
+.welcome-text h2 {
+  margin-top: 80px;
+}
+
+section .proficiency {
+  padding: 30px 0;
+}
+
+section .proficiency ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+section .proficiency ul li {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
 }
