@@ -24,6 +24,7 @@ li {
 /* fonts */
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #e5e5e5;
 }
 
 h4 {
@@ -77,6 +78,14 @@ li {
   height: 100vh;
   margin: auto;
   background-image: url('../images/background/header-shapes\ mobile@2x.svg');
+  background-color: #fff;
+  border-bottom-left-radius: 100px;
+  padding-top: 10px;
+}
+
+.container {
+  width: 327px;
+  margin: auto;
 }
 
 .header {
@@ -103,8 +112,16 @@ li {
 }
 
 .welcome {
-  width: 327px;
+  width: 100%;
+  border-bottom-left-radius: 100px;
+}
+
+.about_me {
+  width: 100%;
   margin: 70px auto;
+  background-color: #fff;
+  border-top-right-radius: 100px;
+  padding: 100px 0;
 }
 
 .welcome_header {
@@ -141,8 +158,11 @@ li {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 65px;
-  margin-top: 80px;
   place-items: center;
+}
+
+.works {
+  margin-top: 200px;
 }
 
 .project {
