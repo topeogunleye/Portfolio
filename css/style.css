@@ -77,7 +77,6 @@ li {
   max-width: 100%;
   height: 100vh;
   margin: auto;
-  background-image: url('../images/background/header-shapes\ mobile@2x.svg');
   background-color: #fff;
   border-bottom-left-radius: 90px;
   padding-top: 10px;
@@ -108,14 +107,15 @@ li {
 }
 
 .main {
-  margin: 114px 0;
 }
 
 .welcome {
   width: 100%;
   border-bottom-left-radius: 90px;
-  height: 87vh;
   margin-top: 0;
+  background-image: url('../images/background/header-shapes\ mobile@2x.svg');
+  background-position: center;
+  padding: 100px 0;
 }
 
 .about_me {
@@ -315,4 +315,3 @@ textarea {
 .contact .btn {
   margin-top: 10px;
 }
- 
