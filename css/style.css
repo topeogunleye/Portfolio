@@ -114,6 +114,8 @@ li {
 .welcome {
   width: 100%;
   border-bottom-left-radius: 100px;
+  height: 87vh;
+  margin-top: 0;
 }
 
 .about_me {
@@ -162,7 +164,7 @@ li {
 }
 
 .works {
-  margin-top: 200px;
+  margin: auto;
 }
 
 .project {
@@ -264,3 +266,7 @@ li {
   color: #000;
 }
 
+.contact {
+  width: 100%;
+
+}
