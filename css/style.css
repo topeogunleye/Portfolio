@@ -180,6 +180,10 @@ li {
   height: 596px;
 }
 
+.project-img img {
+  max-width: 100%;
+}
+
 .project-text {
   height: 288px;
 }
