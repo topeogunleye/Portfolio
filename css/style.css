@@ -319,3 +319,37 @@ textarea {
 .contact .btn {
   margin-top: 10px;
 }
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  h4 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .leading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
