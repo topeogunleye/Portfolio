@@ -354,12 +354,25 @@
               love to help with it
             </p>
             <form action="https://formspree.io/f/mvodnloy" method="post">
-              <input type="text" placeholder="John Doe" maxlength="30" />
-              <input type="email" placeholder="email@example.com" />
+              <input
+                type="text"
+                placeholder="John Doe"
+                maxlength="30"
+                aria-required="true"
+                required
+              />
+              <input
+                type="email"
+                placeholder="email@example.com"
+                aria-required="true"
+                required
+              />
               <textarea
                 name=""
                 placeholder="write your message here"
                 maxlength="500"
+                aria-required="true"
+                required
               ></textarea>
               <button class="btn" type="submit">Get In Touch</button>
             </form>
