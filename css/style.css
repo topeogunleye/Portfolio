@@ -67,6 +67,11 @@ li {
   cursor: pointer;
 }
 
+.btn:disabled {
+  color: #5E6C84;
+  border: 1px solid #5E6C84;
+}
+
 /* mobile styles */
 .flex {
   display: flex;
