@@ -342,23 +342,38 @@ textarea {
   }
 
   .container {
-    width: 100%;
+    /* width: 87%; */
     margin: auto;
+  }
+
+  .welcome {
+    margin-bottom: 200px;
+    background-image: url('../images/background/header\ background-shape-desktop.svg');
+  }
+
+  .welcome .container {
+    max-width: 63.89%;
   }
 
   .project-img img {
     max-width: 87.2%;
   }
-  
+
   .project {
     height: initial;
   }
-  
+
   .project:nth-of-type(even) {
     height: initial;
   }
-}
 
+  .contact h2,
+  .contact p {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+}
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
