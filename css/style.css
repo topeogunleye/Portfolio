@@ -79,7 +79,7 @@ li {
   margin: auto;
   background-image: url('../images/background/header-shapes\ mobile@2x.svg');
   background-color: #fff;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 90px;
   padding-top: 10px;
 }
 
@@ -113,7 +113,7 @@ li {
 
 .welcome {
   width: 100%;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 90px;
   height: 87vh;
   margin-top: 0;
 }
@@ -122,7 +122,7 @@ li {
   width: 100%;
   margin: 70px auto;
   background-color: #fff;
-  border-top-right-radius: 100px;
+  border-top-right-radius: 90px;
   padding: 100px 0;
 }
 
@@ -266,7 +266,53 @@ li {
   color: #000;
 }
 
-.contact {
-  width: 100%;
-
+input,
+textarea {
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  color: #172b4d;
+  font-size: 17px;
 }
+
+.contact {
+  padding: 30px 20px;
+  background: url('../images/background/header-shapes-contact@2x.svg');
+  background-color: #6070ff;
+  border-top-left-radius: 90px;
+  padding: 100px 0;
+}
+
+.contact h2,
+.contact p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.contact textarea {
+  max-width: 100%;
+  height: 200px;
+}
+
+.contact .btn {
+  margin-top: 10px;
+}
+ 
