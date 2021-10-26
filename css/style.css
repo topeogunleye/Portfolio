@@ -67,6 +67,11 @@ li {
   cursor: pointer;
 }
 
+.btn:disabled {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+}
+
 /* mobile styles */
 .flex {
   display: flex;
@@ -74,22 +79,21 @@ li {
 }
 
 .mobile-container {
-  max-width: 375px;
+  max-width: 100%;
   height: 100vh;
   margin: auto;
-  background-image: url('../images/background/header-shapes\ mobile@2x.svg');
   background-color: #fff;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 90px;
   padding-top: 10px;
 }
 
 .container {
-  width: 327px;
+  width: 87.2%;
   margin: auto;
 }
 
 .header {
-  width: 327px;
+  width: 100%;
   margin: 25px auto;
   color: var(--tertiary);
   font-size: 18px;
@@ -107,20 +111,19 @@ li {
   text-decoration: none;
 }
 
-.main {
-  margin: 114px 0;
-}
-
 .welcome {
   width: 100%;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 90px;
+  margin-top: 0;
+  background-image: url('../images/background/header-shapes\ mobile@2x.svg');
+  padding: 100px 0;
 }
 
 .about_me {
   width: 100%;
   margin: 70px auto;
   background-color: #fff;
-  border-top-right-radius: 100px;
+  border-top-right-radius: 90px;
   padding: 100px 0;
 }
 
@@ -162,7 +165,7 @@ li {
 }
 
 .works {
-  margin-top: 200px;
+  margin: auto;
 }
 
 .project {
@@ -170,12 +173,16 @@ li {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 327px;
+  width: 87.2%;
   height: 552px;
 }
 
 .project:nth-of-type(even) {
   height: 596px;
+}
+
+.project-img img {
+  max-width: 100%;
 }
 
 .project-text {
@@ -262,4 +269,53 @@ li {
   padding: 16px;
   background-color: #fff;
   color: #000;
+}
+
+input,
+textarea {
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  color: #172b4d;
+  font-size: 17px;
+}
+
+.contact {
+  background: url('./images/background/header-shapes-contact@2x.svg');
+  background-color: #6070ff;
+  border-top-left-radius: 90px;
+  padding: 100px 0;
+}
+
+.contact h2,
+.contact p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.contact textarea {
+  max-width: 100%;
+  height: 200px;
+}
+
+.contact .btn {
+  margin-top: 10px;
 }

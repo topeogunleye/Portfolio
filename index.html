@@ -13,17 +13,19 @@
   </head>
   <body>
     <div class="mobile-container">
-      <header class="header">
-        <nav class="header_toolbar">
-          <a href="#" class="header_logo">My Logo</a>
-          <a href="#" class="menu">
-            <i class="fa fa-bars"></i>
-          </a>
-        </nav>
-      </header>
+      <div class="container">
+        <header class="header">
+          <nav class="header_toolbar">
+            <a href="#" class="header_logo">My Logo</a>
+            <a href="#" class="menu">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
+        </header>
+      </div>
 
       <main class="main">
-        <section id="welcome" class="welcome flex">
+        <section id="welcome" class="welcome">
           <div class="container">
             <h1 class="welcome_header">I’m Temitope Glad to see you!</h1>
             <p class="leading">
@@ -342,6 +344,40 @@
             </div>
           </div>
         </section>
+
+        <footer id="contact" class="contact">
+          <div class="container flex">
+            <h2 class="welcome_header">Contact me</h2>
+            <p class="leading">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+            <form action="https://formspree.io/f/mvodnloy" method="post">
+              <input
+                type="text"
+                placeholder="John Doe"
+                maxlength="30"
+                aria-required="true"
+                required
+              />
+              <input
+                type="email"
+                placeholder="email@example.com"
+                aria-required="true"
+                required
+              />
+              <textarea
+                name="text"
+                placeholder="write your message here"
+                maxlength="500"
+                aria-required="true"
+                required
+              ></textarea>
+              <button class="btn" type="submit">Get In Touch</button>
+            </form>
+          </div>
+        </footer>
       </main>
     </div>
   </body>
