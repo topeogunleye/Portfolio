@@ -74,7 +74,7 @@ li {
 }
 
 .mobile-container {
-  max-width: 375px;
+  max-width: 100%;
   height: 100vh;
   margin: auto;
   background-image: url('../images/background/header-shapes\ mobile@2x.svg');
@@ -84,12 +84,12 @@ li {
 }
 
 .container {
-  width: 327px;
+  width: 87.2%;
   margin: auto;
 }
 
 .header {
-  width: 327px;
+  width: 100%;
   margin: 25px auto;
   color: var(--tertiary);
   font-size: 18px;
@@ -170,7 +170,7 @@ li {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 327px;
+  width: 87.2%;
   height: 552px;
 }
 
@@ -263,3 +263,4 @@ li {
   background-color: #fff;
   color: #000;
 }
+
