@@ -345,7 +345,20 @@ textarea {
     width: 100%;
     margin: auto;
   }
+
+  .project-img img {
+    max-width: 87.2%;
+  }
+  
+  .project {
+    height: initial;
+  }
+  
+  .project:nth-of-type(even) {
+    height: initial;
+  }
 }
+
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
