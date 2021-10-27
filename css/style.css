@@ -221,16 +221,13 @@ li {
   margin: 10px 0;
 }
 
-.primary-text {
-  font-size: 13px;
-}
-
 .primary-text ul {
   display: flex;
   justify-content: space-between;
   width: 236px;
   padding: 0;
   font-weight: 600;
+  font-size: 13px;
   line-height: 16px;
   margin: 15px 0;
 }
@@ -332,7 +329,7 @@ textarea {
     line-height: 52px;
   }
 
-  .leading {
+  .welcome .leading {
     font-size: 20px;
     line-height: 28px;
   }
@@ -405,5 +402,20 @@ textarea {
 
   .toggler {
     display: none;
+  }
+
+  .primary-text ul {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 297px;
+  }
+
+  .ul .first-child {
+    font-weight: 500;
+  }
+
+  .secondary-text {
+    font-size: 16px;
   }
 }
