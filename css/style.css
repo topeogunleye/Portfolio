@@ -19,6 +19,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 /* fonts */
@@ -109,6 +110,10 @@ li {
 .header_logo {
   font-weight: bold;
   text-decoration: none;
+}
+
+.menu-wrap .hamburger {
+  display: none;
 }
 
 .welcome {
@@ -320,10 +325,6 @@ textarea {
   margin-top: 10px;
 }
 
-/* small tablet styles */
-@media screen and (min-width: 620px) {
-}
-
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
   h4 {
@@ -347,7 +348,7 @@ textarea {
   }
 
   .welcome {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     background-image: url('../images/background/header\ background-shape-desktop.svg');
   }
 
@@ -391,11 +392,18 @@ textarea {
     margin: auto;
     text-align: center;
   }
-}
 
-/* desktop styles */
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 20px;
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .menu-wrap {
+    width: 250px;
+  }
+
+  .toggler {
+    display: none;
   }
 }
