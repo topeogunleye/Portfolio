@@ -10,6 +10,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 980px)"
+      href="./css/menu.css"
+    />
   </head>
   <body>
     <div class="mobile-container">
@@ -17,9 +22,22 @@
         <header class="header">
           <nav class="header_toolbar">
             <a href="#" class="header_logo">My Logo</a>
-            <a href="#" class="menu">
-              <i class="fa fa-bars"></i>
-            </a>
+            <div class="menu-wrap">
+              <div class="hamburger">
+                <i class="fa fa-bars"></i>
+              </div>
+              <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </nav>
         </header>
       </div>
@@ -100,7 +118,7 @@
             </section>
           </div>
         </section>
-        <div class="works grid">
+        <div id="portfolio" class="works grid">
           <div class="project flex">
             <div class="project-img">
               <img
@@ -242,8 +260,8 @@
           </div>
         </div>
 
-        <section id="about_me" class="about_me">
-          <div class="container">
+        <section id="about" class="about_me">
+          <div class="container flex">
             <div class="welcome-text">
               <h2 class="welcome_header">About<br />Myself</h2>
               <p class="leading">
@@ -252,77 +270,76 @@
                 If you like what you see and have a project you need coded,
                 don’t hestiate to contact me.
               </p>
+
+              <section class="social">
+                <h2 class="social_header">LET'S CONNECT</h2>
+                <ul class="social_list">
+                  <li class="social_li">
+                    <a
+                      href="https://github.com/topeogunleye"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./images/svg/Github-icon.svg"
+                        alt="Github icon"
+                        class="social_icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="social_li">
+                    <a
+                      href="https://www.linkedin.com/in/ogunleye"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./images/svg/Linkedin-icon.svg"
+                        alt="Linkedin icon"
+                        class="social_icon"
+                    /></a>
+                  </li>
+                  <li class="social_li">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="./images/svg/Vector.svg"
+                        alt="Vector icon"
+                        class="social_icon"
+                    /></a>
+                  </li>
+                  <li class="social_li">
+                    <a
+                      href="https://twitter.com/topeogunleye21"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./images/svg/Twitter-icon.svg"
+                        alt="Twitter icon"
+                        class="social_icon"
+                    /></a>
+                  </li>
+
+                  <li class="social_li">
+                    <a
+                      href="https://topeogunleye1.medium.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./images/svg/Medium-icon.svg"
+                        alt="Medium icon"
+                        class="social_icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <a href="#" rel="noopener noreferrer" class="btn btn-resume"
+                >Get my resume</a
+              >
             </div>
-
-            <section class="social">
-              <h2 class="social_header">LET'S CONNECT</h2>
-              <ul class="social_list">
-                <li class="social_li">
-                  <a
-                    href="https://github.com/topeogunleye"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="./images/svg/Github-icon.svg"
-                      alt="Github icon"
-                      class="social_icon"
-                    />
-                  </a>
-                </li>
-                <li class="social_li">
-                  <a
-                    href="https://www.linkedin.com/in/ogunleye"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="./images/svg/Linkedin-icon.svg"
-                      alt="Linkedin icon"
-                      class="social_icon"
-                  /></a>
-                </li>
-                <li class="social_li">
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="./images/svg/Vector.svg"
-                      alt="Vector icon"
-                      class="social_icon"
-                  /></a>
-                </li>
-                <li class="social_li">
-                  <a
-                    href="https://twitter.com/topeogunleye21"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="./images/svg/Twitter-icon.svg"
-                      alt="Twitter icon"
-                      class="social_icon"
-                  /></a>
-                </li>
-
-                <li class="social_li">
-                  <a
-                    href="https://topeogunleye1.medium.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="./images/svg/Medium-icon.svg"
-                      alt="Medium icon"
-                      class="social_icon"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </section>
-
-            <a href="#" rel="noopener noreferrer" class="btn btn-resume"
-              >Get my resume</a
-            >
-
             <div class="proficiency">
               <ul>
                 <li aria-expanded="true" aria-haspopup="true">
@@ -344,41 +361,42 @@
             </div>
           </div>
         </section>
-
-        <footer id="contact" class="contact">
-          <div class="container flex">
-            <h2 class="welcome_header">Contact me</h2>
-            <p class="leading">
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it
-            </p>
-            <form action="https://formspree.io/f/mvodnloy" method="post">
-              <input
-                type="text"
-                placeholder="John Doe"
-                maxlength="30"
-                aria-required="true"
-                required
-              />
-              <input
-                type="email"
-                placeholder="email@example.com"
-                aria-required="true"
-                required
-              />
-              <textarea
-                name="text"
-                placeholder="write your message here"
-                maxlength="500"
-                aria-required="true"
-                required
-              ></textarea>
-              <button class="btn" type="submit">Get In Touch</button>
-            </form>
-          </div>
-        </footer>
       </main>
+      <footer id="contact" class="contact">
+        <div class="container">
+          <h2 class="welcome_header">Contact me</h2>
+          <p class="leading">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form action="https://formspree.io/f/mvodnloy" method="post">
+            <input
+              name="fullname"
+              type="text"
+              placeholder="John Doe"
+              maxlength="30"
+              aria-required="true"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="email@example.com"
+              aria-required="true"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="write your message here"
+              maxlength="500"
+              aria-required="true"
+              required
+            ></textarea>
+            <button class="btn" type="submit">Get In Touch</button>
+          </form>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
