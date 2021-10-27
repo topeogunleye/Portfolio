@@ -15,7 +15,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://topeleyemicroverse.netlify.app/#portfolio)
+[Live Demo Link](https://topeleyemicroverse.netlify.app/)
 
 ## Getting Started
 To get a local copy up and running, follow the steps in Setup below.
