@@ -14,7 +14,7 @@ Additional description about the project and its features.
 - stylelint
 
 ## Getting Started
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow the steps in Setup below.
 
 ### Prerequisites
 Basic knowledge of HTML, CSS, and JavaScript.
