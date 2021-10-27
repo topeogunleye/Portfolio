@@ -355,6 +355,14 @@ textarea {
     max-width: 63.89%;
   }
 
+  .welcome-text {
+    max-width: 45%;
+  }
+
+  /* .about_me .flex {
+    justify-content: initial;
+  } */
+
   .project-img img {
     max-width: 87.2%;
   }
@@ -365,6 +373,16 @@ textarea {
 
   .project:nth-of-type(even) {
     height: initial;
+  }
+
+  .proficiency {
+    min-width: 45%;
+  }
+
+  .contact {
+    background: url('../images/background/contact\ form\ background\ shapes.svg');
+    background-color: #6070ff;
+    text-align: center;
   }
 
   .contact h2,
