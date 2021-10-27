@@ -11,10 +11,14 @@ Additional description about the project and its features.
 ## Built With
 
 - HTML, CSS
-- stylelint
+- Stylelint, Web Hint, Lighthouse
+
+## Live Demo
+
+[Live Demo Link](https://topeleyemicroverse.netlify.app/)
 
 ## Getting Started
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow the steps in Setup below.
 
 ### Prerequisites
 Basic knowledge of HTML, CSS, and JavaScript.
