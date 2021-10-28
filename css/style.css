@@ -57,11 +57,10 @@ li {
   border-radius: 8px;
   padding: 8px 10px;
   width: fit-content;
+  transition: all 1.4s ease-in-out 0s;
 }
 
 .btn:hover {
-  box-sizing: border-box;
-  border-radius: 8px;
   background: var(--tertiary);
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
@@ -105,6 +104,7 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header_logo {
@@ -184,7 +184,15 @@ li {
 }
 
 .project-img img {
+  transition: transform 4s ease-in-out 0s;
+}
+
+.project-img img {
   max-width: 100%;
+}
+
+.project-img img:hover {
+  transform: scale(1.15)
 }
 
 .skills ul {
@@ -293,6 +301,11 @@ textarea {
 .contact p {
   font-size: 20px;
   line-height: 28px;
+  transition: transform 2s ease-in-out 0s;
+}
+
+.contact p:hover {
+  transform: translate(20px);
 }
 
 .contact form {
