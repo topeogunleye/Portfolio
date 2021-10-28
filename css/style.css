@@ -179,19 +179,11 @@ li {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   width: 87.2%;
-  height: 552px;
-}
-
-.project:nth-of-type(even) {
-  height: 596px;
+  height: max-content;
 }
 
 .project-img img {
   max-width: 100%;
-}
-
-.project-text {
-  height: 288px;
 }
 
 .skills ul {
@@ -356,10 +348,6 @@ textarea {
     max-width: 45%;
   }
 
-  .project {
-    height: initial;
-  }
-
   .project-img img {
     max-width: 90%;
   }
@@ -369,7 +357,6 @@ textarea {
   }
 
   .project:nth-of-type(even) {
-    height: initial;
     flex-direction: row-reverse;
   }
 
