@@ -110,7 +110,20 @@ li {
 .header_logo {
   font-weight: bold;
   text-decoration: none;
+  animation: 3s ease-in 1s 1 normal none running rotate;
 }
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .menu-wrap .hamburger {
   display: none;
