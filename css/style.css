@@ -180,6 +180,7 @@ li {
   border-radius: 16px;
   width: 87.2%;
   height: max-content;
+  align-items: center;
 }
 
 .project-img img {
