@@ -95,7 +95,6 @@ li {
 .header {
   width: 100%;
   margin: 25px auto;
-  color: var(--tertiary);
   font-size: 18px;
   line-height: 20px;
 }
@@ -113,7 +112,6 @@ li {
   animation: 3s ease-in 1s 1 normal none running rotate;
 }
 
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -123,7 +121,6 @@ li {
     transform: rotate(360deg);
   }
 }
-
 
 .menu-wrap .hamburger {
   display: none;
@@ -198,14 +195,11 @@ li {
 
 .project-img img {
   transition: transform 4s ease-in-out 0s;
-}
-
-.project-img img {
   max-width: 100%;
 }
 
 .project-img img:hover {
-  transform: scale(1.15)
+  transform: scale(1.15);
 }
 
 .skills ul {
@@ -408,6 +402,10 @@ textarea {
     display: flex;
     justify-content: space-between;
     list-style: none;
+  }
+
+  .menu ul li a {
+    color: var(--primary);
   }
 
   .menu-wrap {
