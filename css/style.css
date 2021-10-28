@@ -57,11 +57,10 @@ li {
   border-radius: 8px;
   padding: 8px 10px;
   width: fit-content;
+  transition: all 1.4s ease-in-out 0s;
 }
 
 .btn:hover {
-  box-sizing: border-box;
-  border-radius: 8px;
   background: var(--tertiary);
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
@@ -96,7 +95,6 @@ li {
 .header {
   width: 100%;
   margin: 25px auto;
-  color: var(--tertiary);
   font-size: 18px;
   line-height: 20px;
 }
@@ -105,11 +103,23 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header_logo {
   font-weight: bold;
   text-decoration: none;
+  animation: 3s ease-in 1s 1 normal none running rotate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .menu-wrap .hamburger {
@@ -184,7 +194,12 @@ li {
 }
 
 .project-img img {
+  transition: transform 4s ease-in-out 0s;
   max-width: 100%;
+}
+
+.project-img img:hover {
+  transform: scale(1.15);
 }
 
 .skills ul {
@@ -293,6 +308,11 @@ textarea {
 .contact p {
   font-size: 20px;
   line-height: 28px;
+  transition: transform 2s ease-in-out 0s;
+}
+
+.contact p:hover {
+  transform: translate(20px);
 }
 
 .contact form {
@@ -382,6 +402,10 @@ textarea {
     display: flex;
     justify-content: space-between;
     list-style: none;
+  }
+
+  .menu ul li a {
+    color: var(--primary);
   }
 
   .menu-wrap {
