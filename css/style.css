@@ -132,6 +132,8 @@ li {
   margin-top: 0;
   background-image: url('../images/background/header-shapes\ mobile@2x.svg');
   padding: 100px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .about_me {
