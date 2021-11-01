@@ -1,0 +1,42 @@
+// theme colors
+$primary: #344563;
+$secondary: #172b4d;
+$tertiary: #6070ff;
+$breakpoint-laptop: 960px;
+
+.welcome {
+  width: 100%;
+  border-bottom-left-radius: 90px;
+  margin-top: 0;
+  background-image: url('../images/background/header-shapes\ mobile@2x.svg');
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+
+  .welcome_header {
+    color: $secondary;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .welcome {
+    margin-bottom: 300px;
+    background-image: url('../images/background/header\ background-shape-desktop.svg');
+
+    .container {
+      max-width: 63.89%;
+
+      .welcome_header {
+        font-size: 48px;
+        line-height: 60px;
+      }
+
+      .leading {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}

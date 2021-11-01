@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  margin: 25px auto;
+  font-size: 18px;
+  line-height: 20px;
+
+  .header_toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_logo {
+      font-weight: bold;
+      text-decoration: none;
+      animation: 3s ease-in 1s 1 normal none running rotate;
+    }
+  }
+}

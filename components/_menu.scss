@@ -1,0 +1,40 @@
+// theme colors
+$primary: #344563;
+$secondary: #172b4d;
+$tertiary: #6070ff;
+$breakpoint-laptop: 960px;
+
+.menu-wrap {
+  .hamburger {
+    display: block;
+    color: $tertiary;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .menu-wrap {
+    width: 250px;
+
+    .hamburger {
+      display: none;
+    }
+
+    .menu {
+      display: block;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        li a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

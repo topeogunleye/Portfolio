@@ -1,0 +1,118 @@
+// theme colors
+$primary: #344563;
+$secondary: #172b4d;
+$tertiary: #6070ff;
+$breakpoint-laptop: 960px;
+
+.works {
+  margin: auto;
+
+  .project {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 87.2%;
+    height: max-content;
+    align-items: center;
+
+    .project-img img {
+      transition: transform 4s ease-in-out 0s;
+      max-width: 100%;
+    }
+
+    .project-img img:hover {
+      transform: scale(1.15);
+    }
+
+    .project-text {
+      .primary-text ul {
+        display: flex;
+        justify-content: space-between;
+        width: 236px;
+        padding: 0;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        margin: 15px 0;
+
+        .first-child {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          color: $primary;
+        }
+      }
+
+      .secondary-text {
+        font-size: 15px;
+        line-height: 24px;
+        color: $primary;
+        margin-bottom: 17px;
+      }
+
+      .skills ul {
+        margin: 14px 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 215px;
+
+        li {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.03em;
+          color: $tertiary;
+          background: #ebebff;
+          border-radius: 8px;
+          padding: 4px 12px;
+        }
+      }
+
+      .btn-skills {
+        width: 120px;
+        letter-spacing: 0.03em;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .works {
+    .project {
+      align-items: unset;
+      .project-img img {
+        max-width: 90%;
+      }
+
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        .project-img img {
+          max-width: 100%;
+        }
+      }
+
+      .project-text {
+        .primary-text ul {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          width: 297px;
+
+          .first-child {
+            font-weight: 500;
+          }
+        }
+
+        .secondary-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
