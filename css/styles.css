@@ -111,14 +111,24 @@ li {
     margin: auto;
   }
 }
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social .social_header {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
+.social .social_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 170px;
+  margin: 20px 0;
+}
+.social .social_list .social_li a:hover {
+  cursor: pointer;
+}
+
 .menu-wrap .hamburger {
   display: block;
   color: #6070ff;
@@ -161,7 +171,18 @@ li {
 .header .header_toolbar .header_logo {
   font-weight: bold;
   text-decoration: none;
-  animation: 3s ease-in 1s 1 normal none running rotate;
+}
+
+.header_logo {
+  animation: 3s ease-in 1s 1 normal running rotate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .welcome {
@@ -196,24 +217,6 @@ li {
     line-height: 28px;
   }
 }
-.social .social_header {
-  color: #7f8cff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-.social .social_list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  width: 170px;
-  margin: 20px 0;
-}
-.social .social_list .social_li a:hover {
-  cursor: pointer;
-}
-
 .works {
   margin: auto;
 }

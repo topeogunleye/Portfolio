@@ -1,8 +1,17 @@
-@use '../components/base';
-@use '../components/menu';
-@use '../components/header';
-@use '../components/welcome';
-@use '../components/social';
-@use '../components/project';
-@use '../components/about';
-@use '../components/footer';
+// variables & mixins
+@import '../components/variables';
+@import '../components/animations';
+
+// base & layout
+@import '../components/base';
+
+// components
+@import '../components/social';
+
+// Sections
+@import '../components/menu';
+@import '../components/header';
+@import '../components/welcome';
+@import '../components/project';
+@import '../components/about';
+@import '../components/footer';
