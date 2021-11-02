@@ -20,7 +20,7 @@ body {
   background-color: #e5e5e5;
 }
 
-h4 {
+h3 {
   color: #172b4d;
   font-weight: bold;
   font-size: 32px;
@@ -97,7 +97,7 @@ li {
 }
 
 @media (min-width: 960px) {
-  h4 {
+  h3 {
     font-size: 40px;
     line-height: 52px;
   }
@@ -171,9 +171,6 @@ li {
 .header .header_toolbar .header_logo {
   font-weight: bold;
   text-decoration: none;
-}
-
-.header_logo {
   animation: 3s ease-in 1s 1 normal running rotate;
 }
 @keyframes rotate {
