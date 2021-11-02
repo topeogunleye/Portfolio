@@ -1,0 +1,60 @@
+// theme colors
+$primary: #344563;
+$secondary: #172b4d;
+$tertiary: #6070ff;
+$breakpoint-laptop: 960px;
+
+.about_me {
+  width: 100%;
+  margin: 70px auto;
+  background-color: #fff;
+  border-top-right-radius: 90px;
+  padding: 100px 0;
+
+  .proficiency {
+    padding: 30px 0;
+
+    ul {
+      list-style: none;
+      margin: 10px 0;
+
+      li {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 16px;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .about_text {
+    .about_header {
+      color: $secondary;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    .btn-resume {
+      text-decoration: none;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .about_me {
+    .proficiency {
+      min-width: 45%;
+    }
+
+    .about_text {
+      max-width: 45%;
+    }
+  }
+}
