@@ -21,7 +21,7 @@ body {
   background-color: #e5e5e5;
 }
 
-h4 {
+h3 {
   color: $secondary;
   font-weight: bold;
   font-size: 32px;
@@ -98,7 +98,7 @@ li {
 }
 
 @media (min-width: $breakpoint-laptop) {
-  h4 {
+  h3 {
     font-size: 40px;
     line-height: 52px;
   }
