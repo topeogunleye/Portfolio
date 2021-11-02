@@ -6,7 +6,7 @@
     line-height: 24px;
   }
 
-  .social_list {
+  .social_links {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     width: 170px;
     margin: 20px 0;
 
-    .social_li a:hover {
+    li a:hover {
       cursor: pointer;
     }
   }
