@@ -13,7 +13,19 @@
     .header_logo {
       font-weight: bold;
       text-decoration: none;
-      animation: 3s ease-in 1s 1 normal none running rotate;
     }
   }
+}
+
+.header_logo {
+  @include keyframes(rotate) {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @include animate(3s, ease-in, 1s, 1, normal, running, rotate);
 }
