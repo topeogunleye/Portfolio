@@ -13,6 +13,6 @@ ham.addEventListener("click", toggleHamburger);
 
 // METHOD 1
 var menuLinks = document.querySelectorAll(".menuLink");
-menuLinks.forEach(function (menuLink) {
+menuLinks.forEach( (menuLink) => {
   menuLink.addEventListener("click", toggleHamburger);
 });

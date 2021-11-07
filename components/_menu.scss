@@ -1,77 +1,93 @@
-.ham {
-  position: absolute;
-  /* always keep ham on top of everything */
-  z-index: 1000;
-  top: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-color: $overlay-color;
-  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-  background-size: 100%;
+/* NavBar */
+@media (max-width: 960px) {
+  .menu-wrap {
+    .ham {
+      position: absolute;
+      /* always keep ham on top of everything */
+      z-index: 1000;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      background-image: url('../images/svg/ham.svg');
+      background-size: 100%;
+    }
+
+    /* change ham image to close */
+    .showClose {
+      background-image: url('../images/svg/ham-close.svg');
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $overlay-color;
+      width: 100vw;
+      height: 760vh;
+      overflow: hidden;
+      color: white;
+      /* hide the menu above the screen by default */
+      transform: translateY(-100%);
+      /* transition adds a little animation when sliding in and out the menu */
+      transition: transform 0.2s ease;
+
+      ul {
+        width: 100%;
+        height: 250px;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 50px;
+
+        li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 44px;
+          padding: 40px 0;
+        }
+      }
+    }
+
+    .showNav {
+      /* show the menu */
+      transform: translateY(0);
+    }
+
+    button {
+      display: block;
+    }
+  }
 }
 
-/* change ham image to close */
-.showClose {
-  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
-}
+@media (min-width: 960px) {
+  /* basic nav styling below */
+  .menu-wrap {
+    button {
+      display: none;
+    }
 
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: navajowhite;
-  background: rgba(207, 196, 185, 0.85);
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  color: white;
-  /* hide the menu above the screen by default */
-  transform: translateY(-100%);
-  /* transition adds a little animation when sliding in and out the menu */
-  transition: transform 0.2s ease;
-}
+    .navbar {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        width: 250px;
+        justify-content: space-between;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* border: 1px solid red; */
-}
-
-.showNav {
-  /* show the menu */
-  transform: translateY(0);
-}
-
-/* basic nav styling below */
-button {
-  display: initial;
-}
-
-.navbar ul {
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-.navbar ul li a {
-  color: white;
-  padding-bottom: 10px;
-  border-bottom: 2px solid black;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
-}
-
-.navbar ul li a:hover,
-.navbar ul li a:focus {
-  border-bottom: 2px solid white;
+        li a {
+          color: #344563;
+        }
+      }
+    }
+  }
 }
