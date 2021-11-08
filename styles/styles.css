@@ -52,8 +52,9 @@ li {
 .mobile-container {
   max-width: 100%;
   margin: auto;
-  background-color: #e5e5e5;
+  background-color: #fff;
   border-bottom-left-radius: 90px;
+  padding-top: 10px;
 }
 
 .container {
@@ -79,9 +80,7 @@ li {
   border-radius: 8px;
   padding: 8px 10px;
   width: fit-content;
-  transition: all 0.3s ease-in-out 0s;
-  display: flex;
-  align-items: center;
+  transition: all 1.4s ease-in-out 0s;
 }
 
 .btn:hover {
@@ -156,9 +155,8 @@ li {
     top: 0;
     left: 0;
     background: rgba(96, 112, 255, 0.85);
-    backdrop-filter: blur(6px);
     width: 100vw;
-    height: 100vh;
+    height: 760vh;
     overflow: hidden;
     color: white;
     /* hide the menu above the screen by default */
@@ -183,7 +181,8 @@ li {
     text-decoration: none;
     font-weight: 600;
     font-size: 32px;
-    line-height: 74px;
+    line-height: 44px;
+    padding: 40px 0;
   }
   .menu-wrap .showNav {
     /* show the menu */
@@ -202,36 +201,28 @@ li {
     display: flex;
     align-items: center;
     list-style: none;
-    width: 350px;
+    width: 250px;
     justify-content: space-between;
   }
   .menu-wrap .navbar ul li a {
     color: #344563;
   }
   .menu-wrap .navbar ul li .active {
-    border-bottom: 1px solid #333;
+    text-decoration: underline;
   }
 }
-.container.header_section {
-  width: 100%;
-  background-color: #fff;
-  padding: 1px;
-  position: sticky;
-  top: 0;
-}
-.container.header_section .header {
+.header {
   margin: 25px auto;
   font-size: 18px;
   line-height: 20px;
 }
-.container.header_section .header .header_toolbar {
-  width: 87.5%;
-  margin: auto;
+.header .header_toolbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container.header_section .header .header_toolbar .header_logo {
+.header .header_toolbar .header_logo {
   font-weight: bold;
   text-decoration: none;
   animation: 3s ease-in 1s 1 normal running rotate;
@@ -249,7 +240,6 @@ li {
   width: 100%;
   border-bottom-left-radius: 90px;
   margin-top: 0;
-  background-color: #fff;
   background-image: url("../images/background/header-shapes mobile@2x.svg");
   padding: 100px 0;
   justify-content: center;
@@ -280,7 +270,6 @@ li {
 }
 .works {
   margin: auto;
-  padding-top: 100px;
 }
 .works .project {
   padding: 16px;
@@ -343,61 +332,6 @@ li {
   width: 120px;
   letter-spacing: 0.03em;
   margin: 10px 0;
-}
-.works .project .project-text .modal-container {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(193, 199, 208, 0.3);
-}
-.works .project .project-text .modal-container .modal {
-  width: 87.5%;
-  margin: auto;
-}
-.works .project .project-text .modal-container .modal .project {
-  width: 100%;
-  margin: auto;
-  position: relative;
-}
-.works .project .project-text .modal-container .modal .project .primary-text {
-  width: 100%;
-}
-.works .project .project-text .modal-container .modal .project .primary-text .experience .modal_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.works .project .project-text .modal-container .modal .project .primary-text .experience .modal_header h3 {
-  margin: 0;
-}
-.works .project .project-text .modal-container .modal .project .primary-text .experience .modal_header .closeModal {
-  background-image: url("../images/svg/cancel-close-delete.svg");
-  width: 16px;
-  height: 16px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-size: 100%;
-  position: absolute;
-  right: 20px;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-btn {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-btn .btn-live {
-  width: 136px;
-  display: flex;
-  justify-content: space-between;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-btn .btn-source {
-  width: 146px;
-  display: flex;
-  justify-content: space-between;
 }
 
 @media (min-width: 960px) {
@@ -470,37 +404,35 @@ li {
     max-width: 45%;
   }
 }
-.footer {
+.contact {
   background: url("./images/background/header-shapes-contact@2x.svg");
   background-color: #6070ff;
   border-top-left-radius: 90px;
-}
-.footer .contact {
   padding: 100px 0;
 }
-.footer .contact h2 {
+.contact h2 {
   margin-top: 0;
 }
-.footer .contact h2,
-.footer .contact p {
+.contact h2,
+.contact p {
   margin-bottom: 0;
   text-align: center;
   color: #ebebff;
 }
-.footer .contact p {
+.contact p {
   font-size: 20px;
   line-height: 28px;
   transition: transform 2s ease-in-out 0s;
 }
-.footer .contact p:hover {
+.contact p:hover {
   transform: translate(20px);
 }
-.footer .contact form {
+.contact form {
   max-width: 400px;
   margin: 20px auto;
 }
-.footer .contact form input,
-.footer .contact form textarea {
+.contact form input,
+.contact form textarea {
   background: #fff;
   padding: 10px 16px;
   border-radius: 8px;
@@ -510,28 +442,25 @@ li {
   width: 100%;
   margin: 10px 0;
 }
-.footer .contact form textarea {
+.contact form textarea {
   max-width: 100%;
   height: 170px;
 }
-.footer .contact form .btn {
+.contact form .btn {
   margin-top: 10px;
 }
 
 @media (min-width: 960px) {
-  .footer {
+  .contact {
     background: url("../images/background/contact form background shapes.svg");
     background-color: #6070ff;
     text-align: center;
   }
-  .footer h2,
-.footer p {
+  .contact h2,
+.contact p {
     max-width: 500px;
     margin: auto;
     text-align: center;
-  }
-  .footer form .btn {
-    margin: auto;
   }
 }
 

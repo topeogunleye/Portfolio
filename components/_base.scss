@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* reset */
 body,
 p,
@@ -57,7 +53,7 @@ li {
 .mobile-container {
   max-width: 100%;
   margin: auto;
-  background-color: #fff;
+  background-color: #e5e5e5;
   border-bottom-left-radius: 90px;
 }
 
@@ -85,6 +81,8 @@ li {
   padding: 8px 10px;
   width: fit-content;
   transition: all 0.3s ease-in-out 0s;
+  display: flex;
+  align-items: center;
 }
 
 .btn:hover {

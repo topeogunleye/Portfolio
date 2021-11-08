@@ -63,7 +63,7 @@
       href="https://topeleyemicroverse.netlify.app/logo192.png"
     />
 
-    <title> Portfolio | Temitope Ogunleye</title>
+    <title>Portfolio | Temitope Ogunleye</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -88,9 +88,18 @@
               <div>
                 <div class="navbar right-sidebar">
                   <ul>
-                    <li><a href="#portfolio"  class="menuLink">Portfolio</a></li>
-                    <li><a href="#about" class="menuLink">About</a></li>
-                    <li><a href="#contact"  class="menuLink">Contact</a></li>
+                    <li>
+                      <a href="#home" class="menuLink home active">Home</a>
+                    </li>
+                    <li>
+                      <a href="#portfolio" class="menuLink portfolio"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li><a href="#about" class="menuLink about">About</a></li>
+                    <li>
+                      <a href="#contact" class="menuLink contact">Contact</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -100,7 +109,7 @@
       </div>
 
       <main class="main">
-        <section id="welcome" class="welcome flex">
+        <section id="home" class="welcome flex">
           <div class="container">
             <h1 class="welcome_header section_header">
               I’m Temitope <br />
@@ -113,7 +122,7 @@
               hestiate to contact me.
             </p>
 
-            <section class="social">
+            <div class="social">
               <h2 class="social_header">LET'S CONNECT</h2>
               <ul class="social_links">
                 <li>
@@ -175,10 +184,10 @@
                   /></a>
                 </li>
               </ul>
-            </section>
+            </div>
           </div>
         </section>
-        <div id="portfolio" class="works grid">
+        <section id="portfolio" class="works grid">
           <div class="project flex">
             <div class="project-img">
               <img
@@ -210,7 +219,9 @@
                 </ul>
               </div>
 
-              <button class="btn btn-skills" type="button">See Project</button>
+              <button id="open" class="btn btn-skills" type="button">
+                See Project
+              </button>
             </div>
           </div>
 
@@ -318,7 +329,7 @@
               <button class="btn btn-skills" type="button">See Project</button>
             </div>
           </div>
-        </div>
+        </section>
 
         <section id="about" class="about_me">
           <div class="container flex">
@@ -331,7 +342,7 @@
                 don’t hestiate to contact me.
               </p>
 
-              <section class="social">
+              <div class="social">
                 <h2 class="social_header">LET'S CONNECT</h2>
                 <ul class="social_links">
                   <li>
@@ -394,7 +405,7 @@
                     </a>
                   </li>
                 </ul>
-              </section>
+              </div>
 
               <a href="#" rel="noopener noreferrer" class="btn btn-resume"
                 >Get my resume</a
@@ -422,8 +433,8 @@
           </div>
         </section>
       </main>
-      <footer id="contact" class="contact">
-        <div class="container">
+      <footer class="footer">
+        <section id="contact" class="container contact">
           <h2 class="contact_header section_header">Contact me</h2>
           <p>
             If you have an application you are interested in developing, a
@@ -455,7 +466,7 @@
             ></textarea>
             <button class="btn" type="submit">Get In Touch</button>
           </form>
-        </div>
+        </section>
       </footer>
     </div>
 
