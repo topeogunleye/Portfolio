@@ -263,7 +263,6 @@ li {
 
 @media (min-width: 960px) {
   .welcome {
-    margin-bottom: 300px;
     background-image: url("../images/background/header background-shape-desktop.svg");
   }
   .welcome .container {
@@ -343,61 +342,6 @@ li {
   width: 120px;
   letter-spacing: 0.03em;
   margin: 10px 0;
-}
-.works .project .project-text .modal-container {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(193, 199, 208, 0.3);
-}
-.works .project .project-text .modal-container .modal {
-  width: 87.5%;
-  margin: auto;
-}
-.works .project .project-text .modal-container .modal .project {
-  width: 100%;
-  margin: auto;
-  position: relative;
-}
-.works .project .project-text .modal-container .modal .project .primary-text {
-  width: 100%;
-}
-.works .project .project-text .modal-container .modal .project .primary-text .experience .modal_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.works .project .project-text .modal-container .modal .project .primary-text .experience .modal_header h3 {
-  margin: 0;
-}
-.works .project .project-text .modal-container .modal .project .primary-text .experience .modal_header .closeModal {
-  background-image: url("../images/svg/cancel-close-delete.svg");
-  width: 16px;
-  height: 16px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-size: 100%;
-  position: absolute;
-  right: 20px;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-btn {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-btn .btn-live {
-  width: 136px;
-  display: flex;
-  justify-content: space-between;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-btn .btn-source {
-  width: 146px;
-  display: flex;
-  justify-content: space-between;
 }
 
 @media (min-width: 960px) {

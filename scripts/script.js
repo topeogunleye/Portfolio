@@ -4,17 +4,16 @@ const navbar = document.querySelector('.navbar'); // list
 const ham = document.querySelector('.ham'); // button
 const menuLinks = document.querySelectorAll('.menuLink');
 
+function toggleHamburger() {
+  navbar.classList.toggle('showNav');
+  ham.classList.toggle('showClose');
+}
+
+// toggles hamburger menu in and out when clicking on the hamburger
+ham.addEventListener('click', toggleHamburger);
+
+// toggle when clicking on links
 menuLinks.forEach((menuLink) => {
-  // toggles hamburger menu in and out when clicking on the hamburger
-  function toggleHamburger() {
-    navbar.classList.toggle('showNav');
-    ham.classList.toggle('showClose');
-  }
-
-  ham.addEventListener('click', toggleHamburger);
-
-  // toggle when clicking on links
-
   menuLink.addEventListener('click', toggleHamburger);
 });
 
