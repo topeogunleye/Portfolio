@@ -77,25 +77,21 @@
   </head>
   <body>
     <div class="mobile-container">
-      <div class="container">
+      <div class="container header_section">
         <header class="header">
-          <nav class="header_toolbar">
+          <nav id="navbar" class="header_toolbar">
             <a href="#" class="header_logo"
               ><img src="images/png/MyLogo.png" alt="My Logo"
             /></a>
             <div class="menu-wrap">
-              <div class="hamburger">
-                <i class="fa fa-bars"></i>
-              </div>
-              <div class="menu">
-                <div>
-                  <div>
-                    <ul>
-                      <li><a href="#portfolio">Portfolio</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                    </ul>
-                  </div>
+              <button type="button" class="ham"></button>
+              <div>
+                <div class="navbar right-sidebar">
+                  <ul>
+                    <li><a href="#portfolio"  class="menuLink">Portfolio</a></li>
+                    <li><a href="#about" class="menuLink">About</a></li>
+                    <li><a href="#contact"  class="menuLink">Contact</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -462,5 +458,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
