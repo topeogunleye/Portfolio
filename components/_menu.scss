@@ -3,6 +3,7 @@
   .menu-wrap {
     .ham {
       position: absolute;
+
       /* always keep ham on top of everything */
       z-index: 1000;
       top: 20px;
@@ -30,8 +31,10 @@
       height: 760vh;
       overflow: hidden;
       color: white;
+
       /* hide the menu above the screen by default */
       transform: translateY(-100%);
+      
       /* transition adds a little animation when sliding in and out the menu */
       transition: transform 0.2s ease;
 
