@@ -54,7 +54,6 @@ li {
   margin: auto;
   background-color: #fff;
   border-bottom-left-radius: 90px;
-  padding-top: 10px;
 }
 
 .container {
@@ -80,7 +79,7 @@ li {
   border-radius: 8px;
   padding: 8px 10px;
   width: fit-content;
-  transition: all 1.4s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .btn:hover {
@@ -154,7 +153,8 @@ li {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(96, 112, 255, 0.85);
+    background: rgba(97, 113, 255, 0.851);
+    backdrop-filter: blur(6px);
     width: 100vw;
     height: 760vh;
     overflow: hidden;
@@ -208,18 +208,26 @@ li {
     color: #344563;
   }
 }
-.header {
+.container.header_section {
+  width: 100%;
+  background-color: #fff;
+  padding: 1px;
+  position: sticky;
+  top: 0;
+}
+.container.header_section .header {
   margin: 25px auto;
   font-size: 18px;
   line-height: 20px;
 }
-.header .header_toolbar {
-  width: 100%;
+.container.header_section .header .header_toolbar {
+  width: 87.5%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header_toolbar .header_logo {
+.container.header_section .header .header_toolbar .header_logo {
   font-weight: bold;
   text-decoration: none;
   animation: 3s ease-in 1s 1 normal running rotate;
