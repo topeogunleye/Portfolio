@@ -42,7 +42,7 @@ const PROJECTS = [
     id: 'Portfolio',
     name: 'Portfolio',
     description:
-      "This website you're looking at right now. It is a project from the first module at Microverse Bootcamp",
+      "This website you're looking at right now. It is a project I built while developing my pair programming skills during my first module at Microverse Bootcamp.",
     imageUrl: "'../images/png/Snapshoot-Portfolio4.png'",
     imageSrcSet: "'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w'",
     sizes: '(min-width: 960px) 1108px, 544px',
