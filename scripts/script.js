@@ -126,7 +126,9 @@ window.addEventListener('DOMContentLoaded', () => {
         </ul>
       </div>
 
-      <button class="btn btn-skills open-modal" type="button" id="${project.id}">
+      <button class="btn btn-skills open-modal" type="button" id="${
+  project.id
+}">
         See Project
       </button>
 
@@ -137,7 +139,9 @@ window.addEventListener('DOMContentLoaded', () => {
                   <div class="experience">
                     <div class="modal-header">
                       <h3>${project.name}</h3>
-                      <button type="button" class="close-modal" id="${project.id}"></button>
+                      <button type="button" class="close-modal" id="${
+  project.id
+}"></button>
                     </div>
                     <ul class="ul">
                       <li class="first-child">Canopy</li>
@@ -147,10 +151,11 @@ window.addEventListener('DOMContentLoaded', () => {
                   </div>
                 </div>
                 <div class="project-img">
-                  <img
-                    src="./images/png/Snapshoot-Portfolio1.png"
-                    alt="first project"
-                  />
+                <img
+                src=${project.imageUrl}
+                alt="first project"
+                id=${project.id}
+              />
                 </div>
                 <div class="project-text">
                   <div class="secondary-text">
@@ -162,22 +167,32 @@ window.addEventListener('DOMContentLoaded', () => {
                     but also the leap into electronic typesetting, remaining
                     essent
                   </div>
+                  <div class = "skills-buttons-container">
                   <div class="skills">
-                    <ul>
-                      <li>react</li>
-                      <li>react</li>
-                      <li>react</li>
-                    </ul>
+                  <ul id="${project.id}">
+                  ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+                  </ul>
                   </div>
 
                   <div class="modal-buttons">
-                    <button class="btn btn-skills" type="button">
-                      See Live
-                    </button>
-                    <button class="btn btn-skills" type="button">
-                      See Source
-                    </button>
+                  <button class="btn btn-live btn-modal" type="button">
+                  See Live
+                  <img
+                    src="images/png/Icon.png"
+                    alt="link to project website"
+                  />
+                </button>
+                <button class="btn btn-source btn-modal" type="button">
+                  See Source
+                  <img
+                    src="images/png/Vector.png"
+                    alt="link to project repo"
+                  />
+                </button>
+                </div>
                   </div>
+
+                  
                 </div>
               </div>
             </div>
@@ -192,17 +207,23 @@ window.addEventListener('DOMContentLoaded', () => {
   const modals = document.querySelectorAll('.modal-container');
   const closeModalBtns = document.querySelectorAll('.close-modal');
 
-  openModalBtns.forEach((btn => {
+  openModalBtns.forEach((btn) => {
     btn.addEventListener('click', (event) => {
+      document.querySelector('body').style.overflow = 'hidden';
       const projId = event.target.id;
-      [...modals].find(modal => modal.id === projId).classList.add('show-modal');
-    })
-  }));
+      [...modals]
+        .find((modal) => modal.id === projId)
+        .classList.add('show-modal');
+    });
+  });
 
-  closeModalBtns.forEach((btn => {
+  closeModalBtns.forEach((btn) => {
     btn.addEventListener('click', (event) => {
       const projId = event.target.id;
-      [...modals].find(modal => modal.id === projId).classList.remove('show-modal');
-    })
-  }));
+      [...modals]
+        .find((modal) => modal.id === projId)
+        .classList.remove('show-modal');
+      document.querySelector('body').style.overflow = 'initial';
+    });
+  });
 });

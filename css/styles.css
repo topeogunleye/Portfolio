@@ -351,6 +351,8 @@ li {
   height: 100vh;
   opacity: 0;
   pointer-events: none;
+  backdrop-filter: blur(6px);
+  overflow: auto;
 }
 .works .project .project-text .modal-container.show-modal {
   opacity: 1;
@@ -358,18 +360,23 @@ li {
 }
 .works .project .project-text .modal-container .modal {
   width: 100%;
-  height: 100%;
+  height: 120%;
+  display: grid;
+  place-items: center;
 }
 .works .project .project-text .modal-container .modal .project {
   width: 87.5%;
   margin: auto;
 }
-.works .project .project-text .modal-container .modal .project .modal-header {
+.works .project .project-text .modal-container .modal .project .primary-text {
+  width: 100%;
+}
+.works .project .project-text .modal-container .modal .project .primary-text .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.works .project .project-text .modal-container .modal .project .modal-header .close-modal {
+.works .project .project-text .modal-container .modal .project .primary-text .modal-header .close-modal {
   background-image: url(../images/svg/cancel-close-delete.svg);
   background-size: 100%;
   background-color: transparent;
@@ -377,6 +384,21 @@ li {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  margin-right: 10px;
+}
+.works .project .project-text .modal-container .modal .project .project-text .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.works .project .project-text .modal-container .modal .project .project-text .modal-buttons .btn-modal {
+  display: flex;
+  justify-content: space-between;
+}
+.works .project .project-text .modal-container .modal .project .project-text .modal-buttons .btn-live {
+  width: 136px;
+}
+.works .project .project-text .modal-container .modal .project .project-text .modal-buttons .btn-source {
+  width: 146px;
 }
 
 @media (min-width: 960px) {
@@ -403,6 +425,14 @@ li {
   }
   .works .project .project-text .secondary-text {
     font-size: 16px;
+  }
+  .works .project .project-text .modal-container .modal .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .works .project .project-text .modal-container .modal .project .project-text {
+    display: flex;
   }
 }
 .about_me {

@@ -81,6 +81,8 @@
         height: 100vh;
         opacity: 0;
         pointer-events: none;
+        backdrop-filter: blur(6px);
+        overflow: auto;
 
         &.show-modal {
           opacity: 1;
@@ -89,25 +91,51 @@
 
         .modal {
           width: 100%;
-          height: 100%;
+          height: 120%;
+          display: grid;
+          place-items: center;
 
           .project {
             width: 87.5%;
             margin: auto;
 
-            .modal-header {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
+            .primary-text {
+              width: 100%;
+              .modal-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-              .close-modal {
-                background-image: url(../images/svg/cancel-close-delete.svg);
-                background-size: 100%;
-                background-color: transparent;
-                border: none;
-                width: 16px;
-                height: 16px;
-                cursor: pointer;
+                .close-modal {
+                  background-image: url(../images/svg/cancel-close-delete.svg);
+                  background-size: 100%;
+                  background-color: transparent;
+                  border: none;
+                  width: 16px;
+                  height: 16px;
+                  cursor: pointer;
+                  margin-right: 10px;
+                }
+              }
+            }
+
+            .project-text {
+              .modal-buttons {
+                display: flex;
+                justify-content: space-between;
+
+                .btn-modal {
+                  display: flex;
+                  justify-content: space-between;
+                }
+
+                .btn-live {
+                  width: 136px;
+                }
+
+                .btn-source {
+                  width: 146px;
+                }
               }
             }
           }
@@ -148,6 +176,20 @@
 
         .secondary-text {
           font-size: 16px;
+        }
+
+        .modal-container {
+          .modal {
+            .project {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              .project-text {
+                display: flex;
+              }
+            }
+          }
         }
       }
     }
