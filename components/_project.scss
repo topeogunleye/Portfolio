@@ -53,7 +53,7 @@
         list-style: none;
         align-items: center;
         justify-content: space-between;
-        width: 215px;
+        width: 250px;
 
         li {
           font-weight: 500;
@@ -120,22 +120,37 @@
               }
             }
 
-            .project-text {
-              .modal-buttons {
-                display: flex;
-                justify-content: space-between;
+            .project-img {
+              width: 100%;
 
-                .btn-modal {
+              img {
+                transition: none;
+              }
+
+              img:hover {
+                transform: scale(1);
+              }
+            }
+
+            .project-text {
+              width: auto;
+
+              .skills-buttons-container {
+                .skills ul {
+                  width: 250px;
+                }
+
+                .modal-buttons {
                   display: flex;
                   justify-content: space-between;
-                }
+                  width: 250px;
 
-                .btn-live {
-                  width: 136px;
-                }
-
-                .btn-source {
-                  width: 146px;
+                  .btn-modal {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    width: 120px;
+                  }
                 }
               }
             }
@@ -151,10 +166,6 @@
     .project {
       align-items: unset;
 
-      .project-img img {
-        max-width: 90%;
-      }
-
       &:nth-of-type(even) {
         flex-direction: row-reverse;
 
@@ -164,6 +175,8 @@
       }
 
       .project-text {
+        margin-left: 30px;
+
         .primary-text ul {
           font-weight: 400;
           font-size: 18px;
@@ -188,6 +201,23 @@
 
               .project-text {
                 display: flex;
+                margin: auto;
+
+                .skills-buttons-container {
+                  width: 315px;
+
+                  .skills ul {
+                    width: 250px;
+                  }
+
+                  .modal-buttons {
+                    width: 100%;
+
+                    .btn-modal {
+                      width: 136px;
+                    }
+                  }
+                }
               }
             }
           }

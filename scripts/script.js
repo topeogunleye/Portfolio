@@ -5,6 +5,8 @@ const PROJECTS = [
     description:
       'Meal Finder App for users to get Meal Recipes Recommendation, Recipe Instructions and Ingredients or Get random recipes.',
     imageUrl: "'../images/png/Snapshoot-Portfolio1.png'",
+    imageSrcSet: "'../images/png/Snapshoot-Portfolio1.png 544w, ../images/png/modal-desktop.png 1108w'",
+    sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['react', 'tailwind css', 'firebase'],
     site: 'https://recipa.netlify.app',
     repo: 'https://github.com/topeogunleye/Recipe-App-V2',
@@ -14,8 +16,10 @@ const PROJECTS = [
     id: 'PortfolioWebsite',
     name: 'Portfolio Website',
     description:
-      'Portfolio website built using Brittany Chiang Portfolio as a template.',
+      'Portfolio website built using Brittany Chiang Portfolio as a template. All rights belong to Brittany Chaiang. This template is free and open source with regular MIT license',
     imageUrl: "'../images/png/Snapshoot-Portfolio2.png'",
+    imageSrcSet: "'../images/png/Snapshoot-Portfolio2.png 544w, ../images/png/modal-desktop.png 1108w'",
+    sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://www.topeleye.com/',
     repo: 'https://github.com/topeogunleye/v4',
@@ -26,7 +30,9 @@ const PROJECTS = [
     name: 'Meal Finder',
     description:
       "Meal Finder app I built after following a tutorial by Brad Traversy. I made my version by converting Brad's code from vanilla javascript into react, I added extra functionalities e.g react routing",
-    imageUrl: "'../images/png/Snapshoot-Portfolio2.png'",
+    imageUrl: "'../images/png/Snapshoot-Portfolio3.png'",
+    imageSrcSet: "'../images/png/Snapshoot-Portfolio3.png 544w, ../images/png/modal-desktop.png 1108w'",
+    sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['react', 'tailwind css'],
     site: 'https://mealdbrecipes.netlify.app/',
     repo: 'https://github.com/topeogunleye/Recipe-App-V1',
@@ -37,7 +43,9 @@ const PROJECTS = [
     name: 'Portfolio',
     description:
       "This website you're looking at right now. It is a project from the first module at Microverse Bootcamp",
-    imageUrl: "'../images/png/Snapshoot-Portfolio2.png'",
+    imageUrl: "'../images/png/Snapshoot-Portfolio4.png'",
+    imageSrcSet: "'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w'",
+    sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://github.com/topeogunleye/Recipe-App-V1',
     repo: 'https://github.com/topeogunleye/Portfolio-Future-Version',
@@ -153,19 +161,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 <div class="project-img">
                 <img
                 src=${project.imageUrl}
+                srcset = ${project.imageSrcSet}
+                sizes=${project.sizes}
                 alt="first project"
                 id=${project.id}
               />
                 </div>
                 <div class="project-text">
-                  <div class="secondary-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essent
+                  <div class="secondary-text" id=${project.id}>
+                    ${project.description}
                   </div>
                   <div class = "skills-buttons-container">
                   <div class="skills">

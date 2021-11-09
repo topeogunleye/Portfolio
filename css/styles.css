@@ -326,7 +326,7 @@ li {
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  width: 215px;
+  width: 250px;
 }
 .works .project .project-text .skills ul li {
   font-weight: 500;
@@ -386,33 +386,45 @@ li {
   cursor: pointer;
   margin-right: 10px;
 }
-.works .project .project-text .modal-container .modal .project .project-text .modal-buttons {
+.works .project .project-text .modal-container .modal .project .project-img {
+  width: 100%;
+}
+.works .project .project-text .modal-container .modal .project .project-img img {
+  transition: none;
+}
+.works .project .project-text .modal-container .modal .project .project-img img:hover {
+  transform: scale(1);
+}
+.works .project .project-text .modal-container .modal .project .project-text {
+  width: auto;
+}
+.works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container .skills ul {
+  width: 250px;
+}
+.works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container .modal-buttons {
   display: flex;
   justify-content: space-between;
+  width: 250px;
 }
-.works .project .project-text .modal-container .modal .project .project-text .modal-buttons .btn-modal {
+.works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container .modal-buttons .btn-modal {
   display: flex;
   justify-content: space-between;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-buttons .btn-live {
-  width: 136px;
-}
-.works .project .project-text .modal-container .modal .project .project-text .modal-buttons .btn-source {
-  width: 146px;
+  font-size: 14px;
+  width: 120px;
 }
 
 @media (min-width: 960px) {
   .works .project {
     align-items: unset;
   }
-  .works .project .project-img img {
-    max-width: 90%;
-  }
   .works .project:nth-of-type(even) {
     flex-direction: row-reverse;
   }
   .works .project:nth-of-type(even) .project-img img {
     max-width: 100%;
+  }
+  .works .project .project-text {
+    margin-left: 30px;
   }
   .works .project .project-text .primary-text ul {
     font-weight: 400;
@@ -433,6 +445,19 @@ li {
   }
   .works .project .project-text .modal-container .modal .project .project-text {
     display: flex;
+    margin: auto;
+  }
+  .works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container {
+    width: 315px;
+  }
+  .works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container .skills ul {
+    width: 250px;
+  }
+  .works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container .modal-buttons {
+    width: 100%;
+  }
+  .works .project .project-text .modal-container .modal .project .project-text .skills-buttons-container .modal-buttons .btn-modal {
+    width: 136px;
   }
 }
 .about_me {
