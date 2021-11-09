@@ -343,6 +343,41 @@ li {
   letter-spacing: 0.03em;
   margin: 10px 0;
 }
+.works .project .project-text .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+}
+.works .project .project-text .modal-container.show-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+.works .project .project-text .modal-container .modal {
+  width: 100%;
+  height: 100%;
+}
+.works .project .project-text .modal-container .modal .project {
+  width: 87.5%;
+  margin: auto;
+}
+.works .project .project-text .modal-container .modal .project .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.works .project .project-text .modal-container .modal .project .modal-header .close-modal {
+  background-image: url(../images/svg/cancel-close-delete.svg);
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
 
 @media (min-width: 960px) {
   .works .project {

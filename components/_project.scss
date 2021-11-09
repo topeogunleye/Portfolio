@@ -72,6 +72,47 @@
         letter-spacing: 0.03em;
         margin: 10px 0;
       }
+
+      .modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        pointer-events: none;
+
+        &.show-modal {
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        .modal {
+          width: 100%;
+          height: 100%;
+
+          .project {
+            width: 87.5%;
+            margin: auto;
+
+            .modal-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .close-modal {
+                background-image: url(../images/svg/cancel-close-delete.svg);
+                background-size: 100%;
+                background-color: transparent;
+                border: none;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
