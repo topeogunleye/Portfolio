@@ -5,7 +5,8 @@ const PROJECTS = [
     description:
       'Meal Finder App for users to get Meal Recipes Recommendation, Recipe Instructions and Ingredients or Get random recipes.',
     imageUrl: "'../images/png/Snapshoot-Portfolio1.png'",
-    imageSrcSet: "'../images/png/Snapshoot-Portfolio1.png 544w, ../images/png/modal-desktop.png 1108w'",
+    imageSrcSet:
+      "'../images/png/Snapshoot-Portfolio1.png 544w, ../images/png/modal-desktop.png 1108w'",
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['react', 'tailwind css', 'firebase'],
     site: 'https://recipa.netlify.app',
@@ -18,7 +19,8 @@ const PROJECTS = [
     description:
       'Portfolio website built using Brittany Chiang Portfolio as a template. All rights belong to Brittany Chaiang. This template is free and open source with regular MIT license',
     imageUrl: "'../images/png/Snapshoot-Portfolio2.png'",
-    imageSrcSet: "'../images/png/Snapshoot-Portfolio2.png 544w, ../images/png/modal-desktop.png 1108w'",
+    imageSrcSet:
+      "'../images/png/Snapshoot-Portfolio2.png 544w, ../images/png/modal-desktop.png 1108w'",
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://www.topeleye.com/',
@@ -31,7 +33,8 @@ const PROJECTS = [
     description:
       "Meal Finder app I built after following a tutorial by Brad Traversy. I made my version by converting Brad's code from vanilla javascript into react, I added extra functionalities e.g react routing",
     imageUrl: "'../images/png/Snapshoot-Portfolio3.png'",
-    imageSrcSet: "'../images/png/Snapshoot-Portfolio3.png 544w, ../images/png/modal-desktop.png 1108w'",
+    imageSrcSet:
+      "'../images/png/Snapshoot-Portfolio3.png 544w, ../images/png/modal-desktop.png 1108w'",
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['react', 'tailwind css'],
     site: 'https://mealdbrecipes.netlify.app/',
@@ -44,7 +47,8 @@ const PROJECTS = [
     description:
       "This website you're looking at right now. It is a project I built while developing my pair programming skills during my first module at Microverse Bootcamp.",
     imageUrl: "'../images/png/Snapshoot-Portfolio4.png'",
-    imageSrcSet: "'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w'",
+    imageSrcSet:
+      "'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w'",
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://github.com/topeogunleye/Recipe-App-V1',
@@ -174,7 +178,9 @@ window.addEventListener('DOMContentLoaded', () => {
                   <div class = "skills-buttons-container">
                   <div class="skills">
                   <ul id="${project.id}">
-                  ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+                  ${project.technologies
+    .map((tech) => `<li>${tech}</li>`)
+    .join('')}
                   </ul>
                   </div>
 
@@ -230,4 +236,19 @@ window.addEventListener('DOMContentLoaded', () => {
       document.querySelector('body').style.overflow = 'initial';
     });
   });
+});
+
+const form = document.querySelector('.btn-form');
+
+form.addEventListener('click', (event) => {
+  const email = document.querySelector(".form input[type='email']");
+  const error = document.querySelector('.error-msg');
+  const emailToLowerCase = email.value.toLowerCase();
+
+  if (email.validity.patternMismatch) {
+    error.textContent = `Email must be in lowercase: ${emailToLowerCase}`;
+    event.preventDefault();
+  } else {
+    error.textContent = '';
+  }
 });

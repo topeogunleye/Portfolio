@@ -295,7 +295,7 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form action="https://formspree.io/f/mvodnloy" method="post">
+          <form action="https://formspree.io/f/mvodnloy" method="post" class="form">
             <input
               name="fullname"
               type="text"
@@ -310,6 +310,7 @@
               placeholder="email@example.com"
               aria-required="true"
               required
+              pattern="^[a-z0-9]+@(.+)$"
             />
             <textarea
               name="message"
@@ -318,7 +319,9 @@
               aria-required="true"
               required
             ></textarea>
-            <button class="btn" type="submit">Get In Touch</button>
+            <button class="btn btn-form" type="submit">Get In Touch</button>
+
+            <span class="error-msg"></span>
           </form>
         </section>
       </footer>
