@@ -548,6 +548,9 @@ li {
 .footer .contact form .btn {
   margin-top: 10px;
 }
+.footer .contact form .error-msg {
+  color: yellow;
+}
 
 @media (min-width: 960px) {
   .footer {
