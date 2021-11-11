@@ -1,3 +1,12 @@
+function persistStorage(inputElement) {
+  inputElement.addEventListener('input', ()=>  {
+    const formData = JSON.parse(localStorage.getItem('formData'))
+    formData[inputElement.name] = inputElement.value
+    localStorage.setItem('formData', JSON.stringify(formData))
+  }
+  )  
+}
+
 const PROJECTS = [
   {
     id: 'Recipa',
@@ -55,6 +64,9 @@ const PROJECTS = [
     repo: 'https://github.com/topeogunleye/Portfolio-Future-Version',
   },
 ];
+
+window.addEventListener('DOMContentLoaded', () => {
+
 
 // https://codepen.io/ljc-dev/embed/GRoLWxj?height=600&default-tab=js,result&embed-version=2
 // https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
@@ -238,9 +250,9 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const form = document.querySelector('.btn-form');
+const formBtn = document.querySelector('.btn-form');
 
-form.addEventListener('click', (event) => {
+formBtn.addEventListener('click', (event) => {
   const email = document.querySelector(".form input[type='email']");
   const error = document.querySelector('.error-msg');
   const emailToLowerCase = email.value.toLowerCase();
@@ -252,3 +264,31 @@ form.addEventListener('click', (event) => {
     error.textContent = '';
   }
 });
+
+const form = document.querySelector('form');
+console.log(form)
+let formData = JSON.parse(localStorage.getItem('formData'))
+console.log(formData)
+
+
+if (!formData) {
+  formData = {
+    fullname: '',
+    email: '',
+    message: '',
+  }
+  localStorage.setItem('formData', JSON.stringify(formData))
+}
+
+Object.keys(formData).forEach((el) => {
+  form[el].value = formData[el]
+})
+
+Object.keys(formData).forEach((el) => {
+  persistStorage(form.elements[el])
+})
+
+
+})
+
+
