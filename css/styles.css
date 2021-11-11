@@ -291,7 +291,7 @@ li {
   align-items: center;
 }
 .works .project .project-img img {
-  transition: transform 4s ease-in-out 0s;
+  transition: transform 1.3s ease-in-out 0s;
   max-width: 100%;
 }
 .works .project .project-img img:hover {
@@ -360,7 +360,7 @@ li {
 }
 .works .project .project-text .modal-container .modal {
   width: 100%;
-  height: 120%;
+  height: 100%;
   display: grid;
   place-items: center;
 }
@@ -420,11 +420,8 @@ li {
   .works .project:nth-of-type(even) {
     flex-direction: row-reverse;
   }
-  .works .project:nth-of-type(even) .project-img img {
-    max-width: 100%;
-  }
   .works .project .project-text {
-    margin-left: 30px;
+    max-width: 50%;
   }
   .works .project .project-text .primary-text ul {
     font-weight: 400;
@@ -444,6 +441,7 @@ li {
     align-items: center;
   }
   .works .project .project-text .modal-container .modal .project .project-text {
+    max-width: initial;
     display: flex;
     margin: auto;
   }
@@ -502,7 +500,7 @@ li {
   }
 }
 .footer {
-  background: url("./images/background/header-shapes-contact@2x.svg");
+  background: url("../images/background/header-shapes-contact@2x.svg");
   background-color: #6070ff;
   border-top-left-radius: 90px;
 }

@@ -64,7 +64,7 @@ const PROJECTS = [
   },
 ];
 
-window.addEventListener('DOMContentLoaded', () => {
+// window.addEventListener('DOMContentLoaded', () => {
 // https://codepen.io/ljc-dev/embed/GRoLWxj?height=600&default-tab=js,result&embed-version=2
   // https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
   const navbar = document.querySelector('.navbar'); // list
@@ -281,4 +281,4 @@ window.addEventListener('DOMContentLoaded', () => {
   Object.keys(formData).forEach((el) => {
     persistStorage(form.elements[el]);
   });
-});
+// });
