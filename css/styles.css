@@ -130,7 +130,7 @@ li {
 }
 
 /* NavBar */
-@media (max-width: 960px) {
+@media (max-width: 959px) {
   .menu-wrap {
     /* change ham image to close */
   }
