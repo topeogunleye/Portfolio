@@ -420,6 +420,9 @@ li {
   .works .project:nth-of-type(even) {
     flex-direction: row-reverse;
   }
+  .works .project .project-img {
+    max-width: 45%;
+  }
   .works .project .project-text {
     max-width: 50%;
   }
