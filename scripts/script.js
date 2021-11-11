@@ -66,60 +66,60 @@ const PROJECTS = [
 
 // window.addEventListener('DOMContentLoaded', () => {
 // https://codepen.io/ljc-dev/embed/GRoLWxj?height=600&default-tab=js,result&embed-version=2
-  // https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
-  const navbar = document.querySelector('.navbar'); // list
-  const ham = document.querySelector('.ham'); // button
-  const menuLinks = document.querySelectorAll('.menuLink');
+// https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+const navbar = document.querySelector('.navbar'); // list
+const ham = document.querySelector('.ham'); // button
+const menuLinks = document.querySelectorAll('.menuLink');
 
-  function toggleHamburger() {
-    navbar.classList.toggle('showNav');
-    ham.classList.toggle('showClose');
-  }
+function toggleHamburger() {
+  navbar.classList.toggle('showNav');
+  ham.classList.toggle('showClose');
+}
 
-  // toggles hamburger menu in and out when clicking on the hamburger
-  ham.addEventListener('click', toggleHamburger);
+// toggles hamburger menu in and out when clicking on the hamburger
+ham.addEventListener('click', toggleHamburger);
 
-  // toggle when clicking on links
-  menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener('click', toggleHamburger);
+// toggle when clicking on links
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener('click', toggleHamburger);
+});
+
+// Add Highlight to Active Nav Link
+// https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62
+const sections = document.querySelectorAll('section', 'footer');
+
+const navLi = document.querySelectorAll('.navbar ul li a');
+
+window.onscroll = () => {
+  let current = '';
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    // eslint-disable-next-line no-restricted-globals
+    if (scrollY >= sectionTop - 60) {
+      current = section.getAttribute('id');
+      // console.log(current);
+    }
   });
 
-  // Add Highlight to Active Nav Link
-  // https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62
-  const sections = document.querySelectorAll('section', 'footer');
-
-  const navLi = document.querySelectorAll('.navbar ul li a');
-
-  window.onscroll = () => {
-    let current = '';
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-
-      // eslint-disable-next-line no-restricted-globals
-      if (scrollY >= sectionTop - 60) {
-        current = section.getAttribute('id');
-      // console.log(current);
-      }
-    });
-
-    navLi.forEach((li) => {
+  navLi.forEach((li) => {
     // console.log(li);
-      li.classList.remove('active');
+    li.classList.remove('active');
 
-      if (li.classList.contains(current)) {
-        li.classList.add('active');
-      }
-    });
-  };
+    if (li.classList.contains(current)) {
+      li.classList.add('active');
+    }
+  });
+};
 
-  window.addEventListener('DOMContentLoaded', () => {
-    PROJECTS.forEach((project) => {
-      const projectDiv = document.createElement('div');
-      projectDiv.className += 'project';
-      projectDiv.className += ' flex';
+window.addEventListener('DOMContentLoaded', () => {
+  PROJECTS.forEach((project) => {
+    const projectDiv = document.createElement('div');
+    projectDiv.className += 'project';
+    projectDiv.className += ' flex';
 
-      projectDiv.innerHTML = `
+    projectDiv.innerHTML = `
     <div class="project-img">
       <img
         src=${project.imageUrl}
@@ -219,66 +219,66 @@ const PROJECTS = [
     </div>
     `;
 
-      document.querySelector('.works').appendChild(projectDiv);
-    });
+    document.querySelector('.works').appendChild(projectDiv);
+  });
 
-    const openModalBtns = document.querySelectorAll('.open-modal');
-    const modals = document.querySelectorAll('.modal-container');
-    const closeModalBtns = document.querySelectorAll('.close-modal');
+  const openModalBtns = document.querySelectorAll('.open-modal');
+  const modals = document.querySelectorAll('.modal-container');
+  const closeModalBtns = document.querySelectorAll('.close-modal');
 
-    openModalBtns.forEach((btn) => {
-      btn.addEventListener('click', (event) => {
-        document.querySelector('body').style.overflow = 'hidden';
-        const projId = event.target.id;
-        [...modals]
-          .find((modal) => modal.id === projId)
-          .classList.add('show-modal');
-      });
-    });
-
-    closeModalBtns.forEach((btn) => {
-      btn.addEventListener('click', (event) => {
-        const projId = event.target.id;
-        [...modals]
-          .find((modal) => modal.id === projId)
-          .classList.remove('show-modal');
-        document.querySelector('body').style.overflow = 'initial';
-      });
+  openModalBtns.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      document.querySelector('body').style.overflow = 'hidden';
+      const projId = event.target.id;
+      [...modals]
+        .find((modal) => modal.id === projId)
+        .classList.add('show-modal');
     });
   });
 
-  const formBtn = document.querySelector('.btn-form');
-
-  formBtn.addEventListener('click', (event) => {
-    const email = document.querySelector(".form input[type='email']");
-    const error = document.querySelector('.error-msg');
-    const emailToLowerCase = email.value.toLowerCase();
-
-    if (email.validity.patternMismatch) {
-      error.textContent = `Email must be in lowercase: ${emailToLowerCase}`;
-      event.preventDefault();
-    } else {
-      error.textContent = '';
-    }
+  closeModalBtns.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      const projId = event.target.id;
+      [...modals]
+        .find((modal) => modal.id === projId)
+        .classList.remove('show-modal');
+      document.querySelector('body').style.overflow = 'initial';
+    });
   });
+});
 
-  const form = document.querySelector('form');
-  let formData = JSON.parse(localStorage.getItem('formData'));
+const formBtn = document.querySelector('.btn-form');
 
-  if (!formData) {
-    formData = {
-      fullname: '',
-      email: '',
-      message: '',
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
+formBtn.addEventListener('click', (event) => {
+  const email = document.querySelector(".form input[type='email']");
+  const error = document.querySelector('.error-msg');
+  const emailToLowerCase = email.value.toLowerCase();
+
+  if (email.validity.patternMismatch) {
+    error.textContent = `Email must be in lowercase: ${emailToLowerCase}`;
+    event.preventDefault();
+  } else {
+    error.textContent = '';
   }
+});
 
-  Object.keys(formData).forEach((el) => {
-    form[el].value = formData[el];
-  });
+const form = document.querySelector('form');
+let formData = JSON.parse(localStorage.getItem('formData'));
 
-  Object.keys(formData).forEach((el) => {
-    persistStorage(form.elements[el]);
-  });
+if (!formData) {
+  formData = {
+    fullname: '',
+    email: '',
+    message: '',
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+Object.keys(formData).forEach((el) => {
+  form[el].value = formData[el];
+});
+
+Object.keys(formData).forEach((el) => {
+  persistStorage(form.elements[el]);
+});
 // });
