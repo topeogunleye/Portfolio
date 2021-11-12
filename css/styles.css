@@ -443,6 +443,9 @@ li {
     flex-direction: column;
     align-items: center;
   }
+  .works .project .project-text .modal-container .modal .project .project-img {
+    max-width: 100%;
+  }
   .works .project .project-text .modal-container .modal .project .project-text {
     max-width: initial;
     display: flex;

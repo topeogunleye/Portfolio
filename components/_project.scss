@@ -199,6 +199,10 @@
               flex-direction: column;
               align-items: center;
 
+              .project-img {
+                max-width: 100%;
+              }
+
               .project-text {
                 max-width: initial;
                 display: flex;
