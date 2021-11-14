@@ -260,25 +260,24 @@ formBtn.addEventListener('click', (event) => {
   } else {
     error.textContent = '';
   }
+
+  const form = document.querySelector('form');
+  let formData = JSON.parse(localStorage.getItem('formData'));
+
+  if (!formData) {
+    formData = {
+      fullname: '',
+      email: '',
+      message: '',
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+
+  Object.keys(formData).forEach((el) => {
+    form[el].value = formData[el];
+  });
+
+  Object.keys(formData).forEach((el) => {
+    persistStorage(form.elements[el]);
+  });
 });
-
-const form = document.querySelector('form');
-let formData = JSON.parse(localStorage.getItem('formData'));
-
-if (!formData) {
-  formData = {
-    fullname: '',
-    email: '',
-    message: '',
-  };
-  localStorage.setItem('formData', JSON.stringify(formData));
-}
-
-Object.keys(formData).forEach((el) => {
-  form[el].value = formData[el];
-});
-
-Object.keys(formData).forEach((el) => {
-  persistStorage(form.elements[el]);
-});
-// });
