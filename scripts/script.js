@@ -260,7 +260,6 @@ formBtn.addEventListener('click', (event) => {
   } else {
     error.textContent = '';
   }
-});
 
 const form = document.querySelector('form');
 let formData = JSON.parse(localStorage.getItem('formData'));
@@ -281,4 +280,5 @@ Object.keys(formData).forEach((el) => {
 Object.keys(formData).forEach((el) => {
   persistStorage(form.elements[el]);
 });
-// });
+
+});
