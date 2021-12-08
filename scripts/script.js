@@ -60,7 +60,7 @@ const PROJECTS = [
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://github.com/topeogunleye/Recipe-App-V1',
-    repo: 'https://github.com/topeogunleye/Portfolio-Future-Version',
+    repo: 'https://github.com/topeogunleye/Portfolio',
   },
 ];
 
@@ -194,6 +194,7 @@ window.addEventListener('DOMContentLoaded', () => {
                   </div>
 
                   <div class="modal-buttons">
+                  <a href="${project.site}" target="_blank">
                   <button class="btn btn-live btn-modal" type="button">
                   See Live
                   <img
@@ -201,6 +202,8 @@ window.addEventListener('DOMContentLoaded', () => {
                     alt="link to project website"
                   />
                 </button>
+                </a>
+                <a href="${project.repo}" target="_blank">
                 <button class="btn btn-source btn-modal" type="button">
                   See Source
                   <img
@@ -208,6 +211,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     alt="link to project repo"
                   />
                 </button>
+                </a>
                 </div>
                   </div>
 
