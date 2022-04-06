@@ -46,7 +46,7 @@ The following tools help make easier to work with sample code.
 
 ## Authors
 
-👤 **Author1**
+👤 **Temitope Ogunleye**
 
 - GitHub: [@githubhandle](https://github.com/topeogunleye)
 - Twitter: [@twitterhandle](https://twitter.com/topeogunleye21)
