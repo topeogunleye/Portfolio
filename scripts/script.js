@@ -1,11 +1,3 @@
-function persistStorage(inputElement) {
-  inputElement.addEventListener('input', () => {
-    const formData = JSON.parse(localStorage.getItem('formData'));
-    formData[inputElement.name] = inputElement.value;
-    localStorage.setItem('formData', JSON.stringify(formData));
-  });
-}
-
 const PROJECTS = [
   {
     id: 'Recipa',
@@ -251,10 +243,13 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const formBtn = document.querySelector('.btn-form');
+const form = document.querySelector('.form');
 
-formBtn.addEventListener('click', (event) => {
-  const email = document.querySelector(".form input[type='email']");
+const email = document.querySelector(".form input[name='email']");
+const name = document.querySelector(".form input[name='fullname']");
+const message = document.querySelector(".form textarea[name='message']");
+
+form.addEventListener('submit', (event) => {
   const error = document.querySelector('.error-msg');
   const emailToLowerCase = email.value.toLowerCase();
 
@@ -264,24 +259,21 @@ formBtn.addEventListener('click', (event) => {
   } else {
     error.textContent = '';
   }
+});
 
-  const form = document.querySelector('form');
-  let formData = JSON.parse(localStorage.getItem('formData'));
+window.onload = () => {
+  const showData = JSON.parse(localStorage.getItem('dataform'));
 
-  if (!formData) {
-    formData = {
-      fullname: '',
-      email: '',
-      message: '',
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
+  if (showData) {
+    name.value = showData.name;
+    email.value = showData.email;
+    message.value = showData.message;
   }
+};
 
-  Object.keys(formData).forEach((el) => {
-    form[el].value = formData[el];
-  });
-
-  Object.keys(formData).forEach((el) => {
-    persistStorage(form.elements[el]);
-  });
+const initialData = {};
+form.addEventListener('input', (event) => {
+  const { name, value } = event.target;
+  initialData[name] = value;
+  localStorage.setItem('dataform', JSON.stringify(initialData));
 });
