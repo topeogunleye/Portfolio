@@ -2,11 +2,9 @@
 
 # Portfolio
 
-> Portfolio: setup and mobile version skeleton.
+> Portfolio: website containing the most complex projects I have worked on recently. Built with JavaScript.
 
 ![screenshot](./images/demo/Portfolio-demo.gif)
-
-Additional description about the project and its features.
 
 ## Built With
 
