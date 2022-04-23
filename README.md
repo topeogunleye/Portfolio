@@ -4,7 +4,7 @@
 
 > Portfolio: setup and mobile version skeleton.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/demo/Portfolio-demo.gif)
 
 Additional description about the project and its features.
 
