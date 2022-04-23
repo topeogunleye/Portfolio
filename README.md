@@ -54,7 +54,7 @@ The following tools help make easier to work with sample code.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/topeogunleye/Portfolio-1/issues).
+Feel free to check the [issues page](https://github.com/topeogunleye/Portfolio/issues).
 
 ## Show your support
 
