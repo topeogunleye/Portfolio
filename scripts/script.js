@@ -136,13 +136,13 @@ window.addEventListener('DOMContentLoaded', () => {
       <div class="skills">
         <ul>
         ${project.technologies.map((tech) => `<li>${tech}</li>`)
-      .join('')}
+    .join('')}
         </ul>
       </div>
 
       <button class="btn btn-skills open-modal" type="button" id="${
-      project.id
-    }">
+  project.id
+}">
         See Project
       </button>
 
@@ -154,8 +154,8 @@ window.addEventListener('DOMContentLoaded', () => {
                     <div class="modal-header">
                       <h3>${project.name}</h3>
                       <button type="button" class="close-modal" id="${
-      project.id
-    }"></button>
+  project.id
+}"></button>
                     </div>
                     <ul class="ul">
                       <li class="first-child">Canopy</li>
@@ -181,8 +181,8 @@ window.addEventListener('DOMContentLoaded', () => {
                   <div class="skills">
                   <ul id="${project.id}">
                   ${project.technologies
-      .map((tech) => `<li>${tech}</li>`)
-      .join('')}
+    .map((tech) => `<li>${tech}</li>`)
+    .join('')}
                   </ul>
                   </div>
 
