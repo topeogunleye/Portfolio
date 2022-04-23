@@ -4,9 +4,9 @@ const PROJECTS = [
     name: 'Recipa',
     description:
       'Meal Finder App for users to get Meal Recipes Recommendation, Recipe Instructions and Ingredients or Get random recipes.',
-    imageUrl: "'../images/png/Snapshoot-Portfolio1.png'",
+    imageUrl: '\'../images/png/Snapshoot-Portfolio1.png\'',
     imageSrcSet:
-      "'../images/png/Snapshoot-Portfolio1.png 544w, ../images/png/modal-desktop.png 1108w'",
+      '\'../images/png/Snapshoot-Portfolio1.png 544w, ../images/png/modal-desktop.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['react', 'tailwind css', 'firebase'],
     site: 'https://recipa.netlify.app',
@@ -18,9 +18,9 @@ const PROJECTS = [
     name: 'Portfolio Website',
     description:
       'Portfolio website built using Brittany Chiang Portfolio as a template. All rights belong to Brittany Chaiang. This template is free and open source with regular MIT license',
-    imageUrl: "'../images/png/Snapshoot-Portfolio2.png'",
+    imageUrl: '\'../images/png/Snapshoot-Portfolio2.png\'',
     imageSrcSet:
-      "'../images/png/Snapshoot-Portfolio2.png 544w, ../images/png/modal-desktop.png 1108w'",
+      '\'../images/png/Snapshoot-Portfolio2.png 544w, ../images/png/modal-desktop.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://www.topeleye.com/',
@@ -31,10 +31,10 @@ const PROJECTS = [
     id: 'MealFinder',
     name: 'Meal Finder',
     description:
-      "Meal Finder app I built after following a tutorial by Brad Traversy. I made my version by converting Brad's code from vanilla javascript into react, I added extra functionalities e.g react routing",
-    imageUrl: "'../images/png/Snapshoot-Portfolio3.png'",
+      'Meal Finder app I built after following a tutorial by Brad Traversy. I made my version by converting Brad\'s code from vanilla javascript into react, I added extra functionalities e.g react routing',
+    imageUrl: '\'../images/png/Snapshoot-Portfolio3.png\'',
     imageSrcSet:
-      "'../images/png/Snapshoot-Portfolio3.png 544w, ../images/png/modal-desktop.png 1108w'",
+      '\'../images/png/Snapshoot-Portfolio3.png 544w, ../images/png/modal-desktop.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['react', 'tailwind css'],
     site: 'https://mealdbrecipes.netlify.app/',
@@ -45,10 +45,10 @@ const PROJECTS = [
     id: 'Portfolio',
     name: 'Portfolio',
     description:
-      "This website you're looking at right now. It is a project I built while developing my pair programming skills during my first module at Microverse Bootcamp.",
-    imageUrl: "'../images/png/Snapshoot-Portfolio4.png'",
+      'This website you\'re looking at right now. It is a project I built while developing my pair programming skills during my first module at Microverse Bootcamp.',
+    imageUrl: '\'../images/png/Snapshoot-Portfolio4.png\'',
     imageSrcSet:
-      "'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w'",
+      '\'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
     site: 'https://github.com/topeogunleye/Recipe-App-V1',
@@ -135,13 +135,14 @@ window.addEventListener('DOMContentLoaded', () => {
       </div>
       <div class="skills">
         <ul>
-        ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+        ${project.technologies.map((tech) => `<li>${tech}</li>`)
+      .join('')}
         </ul>
       </div>
 
       <button class="btn btn-skills open-modal" type="button" id="${
-  project.id
-}">
+      project.id
+    }">
         See Project
       </button>
 
@@ -153,8 +154,8 @@ window.addEventListener('DOMContentLoaded', () => {
                     <div class="modal-header">
                       <h3>${project.name}</h3>
                       <button type="button" class="close-modal" id="${
-  project.id
-}"></button>
+      project.id
+    }"></button>
                     </div>
                     <ul class="ul">
                       <li class="first-child">Canopy</li>
@@ -180,8 +181,8 @@ window.addEventListener('DOMContentLoaded', () => {
                   <div class="skills">
                   <ul id="${project.id}">
                   ${project.technologies
-    .map((tech) => `<li>${tech}</li>`)
-    .join('')}
+      .map((tech) => `<li>${tech}</li>`)
+      .join('')}
                   </ul>
                   </div>
 
@@ -215,7 +216,8 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
     `;
 
-    document.querySelector('.works').appendChild(projectDiv);
+    document.querySelector('.works')
+      .appendChild(projectDiv);
   });
 
   const openModalBtns = document.querySelectorAll('.open-modal');
@@ -228,7 +230,8 @@ window.addEventListener('DOMContentLoaded', () => {
       const projId = event.target.id;
       [...modals]
         .find((modal) => modal.id === projId)
-        .classList.add('show-modal');
+        .classList
+        .add('show-modal');
     });
   });
 
@@ -237,7 +240,8 @@ window.addEventListener('DOMContentLoaded', () => {
       const projId = event.target.id;
       [...modals]
         .find((modal) => modal.id === projId)
-        .classList.remove('show-modal');
+        .classList
+        .remove('show-modal');
       document.querySelector('body').style.overflow = 'initial';
     });
   });
@@ -245,9 +249,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const form = document.querySelector('.form');
 
-const email = document.querySelector(".form input[name='email']");
-const name = document.querySelector(".form input[name='fullname']");
-const message = document.querySelector(".form textarea[name='message']");
+const email = document.querySelector('.form input[name=\'email\']');
+const fullName = document.querySelector('.form input[name=\'fullname\']');
+console.log(fullName);
+const message = document.querySelector('.form textarea[name=\'message\']');
 
 form.addEventListener('submit', (event) => {
   const error = document.querySelector('.error-msg');
@@ -265,15 +270,18 @@ window.onload = () => {
   const showData = JSON.parse(localStorage.getItem('dataform'));
 
   if (showData) {
-    name.value = showData.name;
+    fullName.value = showData.fullName;
     email.value = showData.email;
     message.value = showData.message;
   }
 };
 
-const initialData = {};
-form.addEventListener('input', (event) => {
-  const { name, value } = event.target;
-  initialData[name] = value;
-  localStorage.setItem('dataform', JSON.stringify(initialData));
+form.addEventListener('input', () => {
+  const data = {
+    fullName: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+
+  localStorage.setItem('dataform', JSON.stringify(data));
 });
