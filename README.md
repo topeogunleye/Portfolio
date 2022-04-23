@@ -46,9 +46,9 @@ The following tools help make easier to work with sample code.
 
 👤 **Temitope Ogunleye**
 
-- GitHub: [@githubhandle](https://github.com/topeogunleye)
-- Twitter: [@twitterhandle](https://twitter.com/topeogunleye21)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ogunleye)
+- GitHub: [@topeogunleye](https://github.com/topeogunleye)
+- Twitter: [@tope_leye](https://twitter.com/tope_leye)
+- LinkedIn: [ogunleye](https://linkedin.com/in/ogunleye)
 
 ## 🤝 Contributing
 
