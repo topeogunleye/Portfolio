@@ -9,7 +9,7 @@
 ## Built With
 
 - HTML, CSS
-- Stylelint, Web Hint, Lighthouse
+- Stylelint, Web Hint, Lighthouse.
 
 ## Live Demo
 
