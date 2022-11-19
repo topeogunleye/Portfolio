@@ -37,7 +37,7 @@
 
 ## 🛠 Built With <a name="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript.</a>
 
-### Tech Stack <a name="https://developer.mozilla.org/en-US/docs/Web/HTML">Vanilla HTML,CSS and JavaScript</a>
+### Tech Stack <a name="https://developer.mozilla.org/en-US/docs/Web/HTML"></a>
 
 <details>
   <summary>Client</summary>
