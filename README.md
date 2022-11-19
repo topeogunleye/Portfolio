@@ -31,9 +31,9 @@
 
 **[Portfolio]** is a website containing the most complex projects I have worked on recently. 
 
-## 🛠 Built With <a name="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript.</a>
+## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="https://developer.mozilla.org/en-US/docs/Web/HTML"></a>
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
