@@ -33,8 +33,6 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Portfolio]** is a website containing the most complex projects I have worked on recently. 
 
 ## 🛠 Built With <a name="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript.</a>
