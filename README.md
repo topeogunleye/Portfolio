@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="logo192.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -121,7 +121,7 @@ Feel free to check the [issues page](https://github.com/topeogunleye/Portfolio/i
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please 
+If you like this project, please kindly buy me a coffee
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
