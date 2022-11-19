@@ -19,10 +19,6 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -56,9 +52,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="(https://topeloba.netlify.app/">Portfolio</a>
+## 🚀 Live Demo <a name="#live-demo">Portfolio</a>
 
-- [Live Demo Link]((https://topeloba.netlify.app/)
+- [Live Demo Link](https://topeloba.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
