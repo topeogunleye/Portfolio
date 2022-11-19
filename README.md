@@ -52,7 +52,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="#live-demo">Portfolio</a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://topeloba.netlify.app/)
 
@@ -107,7 +107,7 @@ Example commands:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing <a name="contributing">Shady Shawkat</a>
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
