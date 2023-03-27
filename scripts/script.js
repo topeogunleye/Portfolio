@@ -285,3 +285,16 @@ form.addEventListener('input', () => {
 
   localStorage.setItem('dataform', JSON.stringify(data));
 });
+
+const accordionHeaders = document.querySelectorAll('.accordion');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const accordionContent = header.querySelector('.accordion-content');
+    const accordionIcon = header.querySelector('i');
+    header.setAttribute('aria-expanded', header.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+    accordionContent.style.display = accordionContent.style.display === 'block' ? 'none' : 'block';
+    accordionIcon.classList.toggle('fa-angle-right');
+    accordionIcon.classList.toggle('fa-angle-down');
+  });
+});
