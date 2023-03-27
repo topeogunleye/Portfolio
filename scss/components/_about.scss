@@ -10,14 +10,14 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .accordion {
     width: 100%;
     max-width: 600px;
     background-color: #fff;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  
+
     .accordion-header {
       display: flex;
       justify-content: space-between;
@@ -25,45 +25,66 @@
       padding: 20px;
       border-bottom: 1px solid #eee;
       cursor: pointer;
-  
+
       h2 {
         font-size: 24px;
         font-weight: 600;
-        margin: 0;
+        margin-left: 0;
       }
-  
+
       i {
         font-size: 24px;
         color: #777;
         transition: transform 0.2s ease-in-out;
       }
-  
+
       &.active i {
         transform: rotate(180deg);
       }
     }
-  
+
     .accordion-content {
-      padding: 20px;
       display: none;
-  
+
       &.active {
         display: block;
       }
-  
+
       .logo-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 20px;
-  
+
         li {
+          display: flex;
+          align-items: center;
+          background-color: var(--color-neutral-10);
+          border-radius: 0.8rem;
+          padding: 0.9rem 1.2rem;
+          transition: box-shadow 0.2s;
           margin: 10px;
+          list-style: none;
+          width: 100%;
+
+          img {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+            object-fit: contain;
+          }
+
+          .skill-card-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 5px;
+            text-align: center;
+          }
         }
       }
     }
   }
-  
+
 
   .about_text {
     .about_header {
@@ -81,12 +102,38 @@
 
 @media (min-width: $breakpoint-laptop) {
   .about_me {
-    .proficiency {
-      min-width: 45%;
-    }
+    .accordion-container {
+      min-width: 55%;
 
-    .about_text {
-      max-width: 45%;
+      .accordion {
+        .logo-list {
+          li {
+            flex-direction: column;
+            align-items: flex-start;
+            width: var(--simple-card-constrained-width);
+            padding: 1.2rem 1.2rem 2rem 1.2rem;
+            height: var(--simple-card-constrained-width);
+          }
+
+          li:hover {
+            // box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .skill-card-title {
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
+  }
+
+  .about_text {
+    max-width: 45%;
   }
 }
