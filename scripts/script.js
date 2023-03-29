@@ -1,44 +1,53 @@
 const PROJECTS = [
   {
-    id: 'Recipa',
-    name: 'Recipa',
+    id: 'Cap Repair App',
+    name: 'Car Repair App',
     description:
-      'Meal Finder App for users to get Meal Recipes Recommendation, Recipe Instructions and Ingredients or Get random recipes.',
-    imageUrl: '\'../images/png/Snapshoot-Portfolio1.png\'',
+      'Car repairs appointment app that users can create an account, select car services and book a car appointement for that service. Built with React and Ruby on rails',
+    imageUrl: '\'../images/projects/appointment-app.png\'',
     imageSrcSet:
-      '\'../images/png/Snapshoot-Portfolio1.png 544w, ../images/png/modal-desktop.png 1108w\'',
+      '\'../images/projects/appointment-app.png 544w, ../images/projects/appointment-app.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
-    technologies: ['react', 'tailwind css', 'firebase'],
+    technologies: ['react', 'tailwind css', 'rails'],
     site: 'https://recipa.netlify.app',
-    repo: 'https://github.com/topeogunleye/Recipe-App-V2',
+    repo: 'https://github.com/topeogunleye/appointment-front-end',
+    position: 'Front-end',
+    company: 'Own Project',
+    year: '2023',
   },
 
   {
-    id: 'PortfolioWebsite',
-    name: 'Portfolio Website',
+    id: 'Space Travellers Hub',
+    name: 'Space Travellers Hub',
     description:
-      'Portfolio website built using Brittany Chiang Portfolio as a template. All rights belong to Brittany Chaiang. This template is free and open source with regular MIT license',
-    imageUrl: '\'../images/png/Snapshoot-Portfolio2.png\'',
+      'Rocket, and mission booking for space adventures app that pulls from the SpaceX API to allow users to join missions or reserve rockets. Built with React and Redux',
+    imageUrl: '\'../images/projects/space-travellers.png\'',
     imageSrcSet:
-      '\'../images/png/Snapshoot-Portfolio2.png 544w, ../images/png/modal-desktop.png 1108w\'',
+      '\'../images/projects/space-travellers.png 544w, ../images/projects/space-travellers.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
-    site: 'https://www.topeleye.com/',
-    repo: 'https://github.com/topeogunleye/v4',
+    site: 'https://spacetravellershub.netlify.app/',
+    repo: 'https://github.com/topeogunleye/Space-Travellers-Temi-Affax',
+    position: 'Front-end',
+    company: 'Own Project',
+    year: '2022',
   },
 
   {
-    id: 'MealFinder',
-    name: 'Meal Finder',
+    id: 'Recipe App',
+    name: 'Recipe App',
     description:
-      'Meal Finder app I built after following a tutorial by Brad Traversy. I made my version by converting Brad\'s code from vanilla javascript into react, I added extra functionalities e.g react routing',
-    imageUrl: '\'../images/png/Snapshoot-Portfolio3.png\'',
+      'A meal finder app that pulls from TheMealDB API to allow users to search for, view recipes, and comment on recipes. Built with JavaScript and Tailwind CSS',
+    imageUrl: '\'../images/projects/recipe-app.png\'',
     imageSrcSet:
-      '\'../images/png/Snapshoot-Portfolio3.png 544w, ../images/png/modal-desktop.png 1108w\'',
+      '\'../images/projects/recipe-app.png 544w, ../images/projects/recipe-app.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
-    technologies: ['react', 'tailwind css'],
-    site: 'https://mealdbrecipes.netlify.app/',
-    repo: 'https://github.com/topeogunleye/Recipe-App-V1',
+    technologies: ['javascript', 'tailwind css'],
+    site: 'https://recipa.netlify.app/',
+    repo: 'https://github.com/topeogunleye/recipe-app',
+    position: 'Front-end',
+    company: 'Own Project',
+    year: '2022',
   },
 
   {
@@ -51,8 +60,11 @@ const PROJECTS = [
       '\'../images/png/Snapshoot-Portfolio4.png 544w, ../images/png/modal-desktop.png 1108w\'',
     sizes: '(min-width: 960px) 1108px, 544px',
     technologies: ['html', 'css', 'javascript'],
-    site: 'https://github.com/topeogunleye/Recipe-App-V1',
+    site: 'https://topeloba.netlify.app/',
     repo: 'https://github.com/topeogunleye/Portfolio',
+    position: 'Front-end',
+    company: 'Own Project',
+    year: '2021',
   },
 ];
 
@@ -124,9 +136,9 @@ window.addEventListener('DOMContentLoaded', () => {
           <h3>${project.name}</h3>
 
           <ul class="ul">
-            <li class="first-child">Canopy</li>
-            <li>Back End Dev</li>
-            <li>2015</li>
+            <li class="first-child">${project.company}</li>
+            <li>${project.position}</li>
+            <li>${project.year}</li>
           </ul>
         </div>
       </div>
@@ -158,9 +170,9 @@ window.addEventListener('DOMContentLoaded', () => {
 }"></button>
                     </div>
                     <ul class="ul">
-                      <li class="first-child">Canopy</li>
-                      <li>Back End Dev</li>
-                      <li>2015</li>
+                      <li class="first-child">${project.company}</li>
+                      <li>${project.position}</li>
+                      <li>${project.year}</li>
                     </ul>
                   </div>
                 </div>
@@ -288,7 +300,7 @@ form.addEventListener('input', () => {
 
 const accordionHeaders = document.querySelectorAll('.accordion');
 
-accordionHeaders.forEach(header => {
+accordionHeaders.forEach((header) => {
   header.addEventListener('click', () => {
     const accordionContent = header.querySelector('.accordion-content');
     const accordionIcon = header.querySelector('i');
